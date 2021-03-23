@@ -1,0 +1,26 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{% if page.meta_title %}{{ page.meta_title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+{% if page.meta_description %}<meta name="description" content="{{ page.meta_description | strip_html | escape }}"/>{% elsif page.teaser %}<meta name="description" content="{{ page.teaser | strip_html | escape }}" />{% elsif site.description %}<meta name="description" content="{{ site.description | strip_html | escape }}" />{% endif %}
+{% if page.meta_keywords %}<meta name="keywords" content="{{ page.meta_keywords | strip_html | escape }}"/>{% endif %}
+
+{% include _favicon.html %}
+
+<!-- Search Engine Optimization -->
+{% if page.noindex == true %}<meta name="robots" content="noindex" />{% endif %}
+
+<link type="text/plain" rel="author" href="{{ 'humans.txt' | relative_url }}">
+
+<!-- Preload fonts -->
+<!--
+<link rel="preload" href="{{ 'assets/fonts/CMOD-Subotron_LightLevel.otf' | relative_url }}" as="font">
+<link rel="preload" href="{{ 'assets/fonts/CMOD-Subotron_RegularLevel.otf' | relative_ur l}}" as="font">
+-->
+
+<!-- Mastodon site verification -->
+<link rel="me" href="https://mastodon.social/@mertlresearch">
+
+{% unless page.style == NULL %}
+<style type="text/css">{{ page.style }}</style>
+{% endunless %}

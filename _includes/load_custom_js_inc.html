@@ -1,0 +1,22 @@
+<!-- Checking custom_inc of the layouts -->
+{% if layout.custom_inc %}
+    <!-- custom_inc found: {{ layout.custom_inc }}-->
+    {% for custom_inc in layout.custom_inc %}
+        <!-- Scripts of {{ custom_inc[0] }}. -->
+        {% for inc_file in custom_inc[1] %}
+            {% include {{ inc_file }} %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+
+<!-- Checking custom_inc of the page -->
+{% if page.custom_inc %}
+    <!-- page found: {{ page.custom_inc }}-->
+    {% for custom_inc in page.custom_inc %}
+        <!-- Scripts of {{ custom_inc[0] }}. -->
+        {% for inc_file in custom_inc[1] %}
+            {% include {{ inc_file }} %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+

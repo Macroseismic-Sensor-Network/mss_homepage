@@ -1,0 +1,24 @@
+main:
+    doc:
+        title:
+            de: "Doku"
+            en: "Doc"
+        url: "doc/overview/"
+    blog:
+        title:
+            de: "Blog"
+            en: "Blog"
+        url: "blog/"
+
+    info:
+        title:
+            de: "Info"
+            en: "Info"
+        url: "info/"
+
+    contact:
+        title:
+            de: "Kontakt"
+            en: "Contact"
+        url: "contact/"
+

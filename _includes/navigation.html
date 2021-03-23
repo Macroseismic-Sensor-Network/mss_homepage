@@ -1,0 +1,34 @@
+<div id="navigation" data-sticky-container>
+    <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;" style="width: 100%">
+        <div id="small-top-nav" class="title-bar" data-responsive-toggle="top-nav" data-hide-for="medium">
+            <div class="title-bar-left">
+                <div class="title-bar-logo float-left"><a href="{{ site.url | relative_url }}" title="Zur Hauptseite"><img src=" {{site.assets_dir | append: 'img/mss_icon_80x80.png' | relative_url}}" width="40" class="header_logo" alt="MSS Logo" title="{{ site.data.language[page.lang].take_me_back }}"></a></div>
+            </div>
+            <div class="title-bar-right">
+                <div class="title-bar-title">{{ site.data.language[page.lang].menu }}</div>
+                <button class="menu-icon" type="button" data-toggle="top-nav"></button>
+            </div>
+        </div>        
+        <div id="top-nav" class="top-bar">
+            <div class="top-bar-title hide-for-small-only">
+                <ul class="menu simple">
+                    <li class="top-bar-title-logo">
+                        <a href="{{ site.url | relative_url}}" title="Zur Hauptseite">
+                            <img src="{{ site.assets_dir | append: 'img/mss_logo_183x80.png' | relative_url}}" class="header_logo float-left" alt="MSS Logo" title="{{ site.data.language[page.lang].take_me_back }}">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-bar-right">
+                <ul class="menu" data-dropdown-menu>
+                    {% for item_data in site.data.navigation.main %}
+                        {% assign item_slug = item_data[0] %}
+                        {% assign item  = item_data[1] %}
+                        <li {% if item.url == page.url %} class="active_nav"{% endif %}><a href="{% if item.url != '/index.html' %}{{ site.url | append: page.base_url | append: item.url | relative_url }}{% else %}{{ site.url | append: page.base_url | relative_url}}{% endif %}">{{ item.title[page.lang] }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

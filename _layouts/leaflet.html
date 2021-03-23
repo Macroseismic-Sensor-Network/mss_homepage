@@ -1,0 +1,38 @@
+---
+layout: compress
+
+custom_js:
+    frontpage:
+        - foundation/vendor/jquery.js
+        - foundation/vendor/foundation.min.js
+        - foundation/app.js
+        - cookiebanner/cookiebanner.min.js
+        - leaflet/leaflet.js
+
+custom_css:
+    frontpage:
+        - theme.css
+        - fontawesome-all.css
+        - latofonts.css
+        - leaflet.css
+
+---
+<!doctype html>
+<html class="no-js" lang="{% if site.language == nil %}en{% else %}{{ site.language }}{% endif %}">
+<head>
+    {% include head_common.html %}
+    {% include load_custom_css.html %}
+</head>
+<body id="top-of-page" class="{{ layout.format }}">
+    <div id="leaflet_container" class="grid-y grid-frame">
+        <div class="cell">
+            {% include navigation.html %}
+        </div>
+        {{ content }}
+    </div>
+
+    {% include load_custom_js.html %}
+    {% include load_custom_js_inc.html %}
+
+</body>
+</html>

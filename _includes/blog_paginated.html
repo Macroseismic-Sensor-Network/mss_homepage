@@ -1,0 +1,68 @@
+{% comment %}
+*  This loops through the paginated posts
+*
+*  Total posts: {{ paginator.total_posts }}
+*  Total paginate-pages: {{ paginator.total_pages }}
+*
+{% endcomment %}
+
+
+<div class="grid-x grid-padding-x grid-margin-y small-up-1 medium-up-2 large-up-4">
+    {% for post in paginator.posts %}
+    <div id="post-{{ post.slug }}" class="cell">
+        <div class="grid-x">
+            <div class="cell">
+                <h1 class="blog_heading"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
+            </div>
+            {% if post.image.header %}
+            <div class="cell">
+                <a href="{{ site.url }}{{ post.url }}" title="{{ post.title escape_once }}"><img src="{{ site.image_dir | append: post.image_dir | append: "/" | append: post.image.header | relative_url }}" alt="{{ post.title escape_once }}" width="100%"></a>
+            </div>
+            {% endif %}
+            <div class="cell">
+                {% if post.subheadline %}
+                <p class="subheadline">{{ post.subheadline }}</p>
+                {% endif %}
+
+                <p class="content">
+                    {% if post.meta_description %}
+                    {{ post.meta_description | strip_html | escape }}
+                    {% elsif post.teaser %}
+                    {{ post.teaser | strip_html | escape }}
+                    {% endif %}
+                </p>
+
+                {% comment %}
+                <span>
+                    <a href="{{ site.url }}{{ post.url }}" title="{{ site.data.language.read }} {{ post.title escape_once }}"><strong>{{ site.data.language[page.lang].read_more }}</strong></a>
+                </span>
+                {% endcomment %}
+
+                {% comment %}
+                <span class="subheader">{% if post.categories %}{{ post.categories | join: ' &middot; ' }}{% endif %}</span> 
+                {% endcomment %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+<div id="pagination" class="grid-x">
+        <div class="cell small-12 medium-5">
+            {% if paginator.previous_page %}
+                {% if paginator.previous_page %}
+                    <a class="button small" href="{{ site.url }}/blog/" title="{{ site.data.language.previous_posts }}">&laquo; {{ site.data.language[page.lang].previous_posts }}</a>
+                {% endif %}
+            {% endif %}
+        </div>
+        <div class="cell small-12 medium-2 text-center">
+            <a class="button small small-only-expanded" href="{{ site.url }}/blog/archive/" title="{{ site.data.language.blog_archive }}">{{ site.data.language[page.lang].blog_archive }}</a>
+        </div>
+        <div class="cell small-12 medium-5 text-right">
+            {% if paginator.next_page %}
+                <a class="button small" href="{{ site.url }}/blog/page{{ paginator.next_page }}/" title="{{ site.data.language.next_posts }}">{{ site.data.language[page.lang].next_posts }} &raquo;</a>
+            {% endif %}
+        </div>
+</div>
+

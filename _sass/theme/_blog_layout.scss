@@ -1,0 +1,35 @@
+
+/* Blog Items
+------------------------------------------------------------------- */
+.blog_heading {
+    background-color: $ci-grey;
+    padding-left: 5px;
+    color: $ci-light-blue;
+    margin-bottom: 0;
+    font-family: $font-family-bold;
+    @include breakpoint(small) {
+        font-size: rem-calc(16);
+    }
+    @include breakpoint(medium) {
+        font-size: rem-calc(18);
+    }
+    @include breakpoint(large) {
+        font-size: rem-calc(20);
+    }
+
+    a {
+        color: white;
+    }
+}
+
+[id^=post] {
+    .subheadline {
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+}
+
+article .subheadline {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}

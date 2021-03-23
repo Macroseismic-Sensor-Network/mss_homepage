@@ -1,0 +1,5 @@
+- name: Atom
+  url: /feed.xml
+  class: fas fa-atom
+  title: Atom Feed
+

@@ -1,0 +1,30 @@
+{% comment %}
+*
+*   {% include image img="filename" caption="image_caption" credit="image_credits" %}
+*
+*   caption is optional
+*   credits is optional
+{% endcomment %}
+
+{% assign slug = page.title | slugify %}
+
+<div style="padding-bottom: 1.25rem; text-align: center;">
+    <a href="{{ site.image_dir | append: page.image_dir  | append: "/" | append: include.img | relative_url }}" data-featherlight="image" {% if include.caption %}caption="{{ include.caption }}"{% endif %}>
+        <img src="{{ site.image_dir | append: page.image_dir | append: "/" | append: include.img | relative_url }}" {% if include.caption %}alt="{{ include.caption }}" {% endif %}>
+    </a>
+
+    {% if include.caption %}
+        {% assign caption = include.caption %}
+    {% endif %}
+    {% if include.credit %}
+        {% assign credit = '(photo: ' | append: include.credit | append: ')' %}
+    {% endif %}
+
+
+    {% if caption or credit %}
+        <figcaption class="center-caption">
+            {% if caption %}{{ caption | markdownify }}{% endif %} {%if credit %}<i>{{ credit | markdownify }}</i>{% endif %}
+        </figcaption>
+    {% endif %}
+
+</div>
