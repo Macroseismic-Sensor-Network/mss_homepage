@@ -8,6 +8,8 @@ images/generative_logo
 sync_site.bash
 Gemfile.lock
 *~
+\#*\#
+.#*
 
 assets/vue
 assets/_includes/vue
