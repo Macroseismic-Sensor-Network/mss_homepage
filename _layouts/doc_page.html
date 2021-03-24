@@ -29,6 +29,7 @@ layout: default
             </div>
 
             <div class="cell medium-9 small-12">
+	      <article itemscope itemtype="http://schema.org/Article">
                     <header>
                             {% if page.image.title %}
                             <figure>
@@ -67,9 +68,10 @@ layout: default
 
 		    {% include doc_section_widget.html %}
 		    
-                    <article>
-                        {{ content }}
-                    </article>
+		    <span itemprop="articleSection">
+                      {{ content }}
+		    </span>
+	      </article>
             </div>
         </div>
     </div>
