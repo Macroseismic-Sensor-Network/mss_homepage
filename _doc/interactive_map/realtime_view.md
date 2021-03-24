@@ -4,9 +4,9 @@ lang-ref: realtime_view
 type: section
 parent: interactive_map
 nav_order: 2
-title: "Aktuelle Ansicht"
+title: "Ansichtsmodus Aktuell"
 subheadline: "Die aktuellen Daten des MSS Netzwerks."
-teaser: "In der aktuellen Ansicht werden die Daten des MSS Netzwerks in annhähernd Echtzeit dargestellt. Die maximalen Bodengeschwindigkeitswerte (PGV) werden farb- und größenkodiert auf der Karte dargestellt und Zeitreihen ausgewählter Stationen können mitverfolgt werden."
+teaser: "Im Ansichtsmodus Aktuell werden die Daten des MSS Netzwerks in annhähernd Echtzeit dargestellt. Die maximalen Bodengeschwindigkeitswerte (PGV) werden farb- und größenkodiert auf der Karte dargestellt und Zeitreihen ausgewählter Stationen können mitverfolgt werden."
 description: "Die Beschreibung der aktuellen Ansicht des MSS Netzwerks, die die Daten des MSS Netzwerks in annähernd Echtzeit aufbereitet."
 image_dir: doc/interactive_map/realtime_view/
 ---
@@ -15,8 +15,9 @@ Im Ansichtsmodus _Aktuell_ werden die Daten des MSS Netzwerks in annähernd Echt
 
 Die Aktualisierung der Datenwerte erfolgt alle 10 Sekunden.
 
-Beim Ansichtsmodus _Aktuell_ ist die Hintergrundkarte im vollen Farbumfang dargestellt. Dadurch ist dieser Ansichtsmodus klar von der [Archivansicht][1], bei der die Hintergrundkarten entsättigte Farben haben, unterscheidbar.
+Beim Ansichtsmodus _Aktuell_ ist die Hintergrundkarte im vollen Farbumfang dargestellt. Dadurch ist dieser Ansichtsmodus klar von der [Archivansicht][1], bei der die Hintergrundkarten entsättigte Farben haben, unterscheidbar. Im Informationspanel zeigen den Status des Servers, die aktuellen detektierten Ereignisse und Details zu ausgewählten Stationen.
 
+{% include insert_image img="mss_vis_realtime_view.jpg" caption="Visualisierung der Daten im Ansichtsmodus Aktuell." %}
 
 
 ## Kartenansicht
@@ -32,14 +33,132 @@ Stationen, für die keine aktuellen Daten vorhanden sind werden als kleine graue
 
 Wird der Mauszeiger über eines der Kreissymbole gehalten, so erscheint ein Popup Fenster, in dem der Stationsname und die PGV Werte der Station angezeigt werden.
 
-## Status
+## Informationspanel
 
-## Ereignis Monitor
+Im Informationspanel auf der rechten Seite sind die Informationsabschnitte _Status_, _Ereignis Monitor_, _Aktuelle Ereignisse_ und _Stationsdetails_ verfügbar.
 
-## Aktuelle Ereignisse
+### Status
+Der Status zeigt einige Parameter, die den Zustand der Serververbindung und des Datentransports beschreiben.
 
-## Stationsdetails
+Server Zeit
+: Die Zeit des Servers zum Zeitpunkt des Sendens der letzten Daten.
 
-## Tabellenansicht
+Server Status
+: Der Server Status gibt den aktuellen Zustand zum MSS Datenserver an.
+
+min. Verzögerung
+: Die kleinste Verzögerung der aktuellen Daten der MSS Stationen relativ zur Server Zeit.
+
+max. Verzögerung
+: Die maximale Verzögerung der aktuellen Daten des MSS Stationen relativ zur Server Zeit.
+
+
+### Ereignis Monitor
+
+Der Ereignis Monitor zeigt den Zustand des Detektionsprozesses auf dem MSS Server an. Sobald der Beginn eines Ereignisses detektiert wurde werden Detail zu diesem aktuellen Ereignis im Ereignis Monitor dargestellt. In diesem Fall werden die folgenden Parameter des im Moment in der Detektion befindlichen Ereignisses dargestellt.
+
+public_id
+: Die eindeutige ID des Ereignisses.
+
+Status
+: Der Status der Detektion.
+
+Start
+: Die Startzeit des detektierten Ereignisses.
+
+Ende
+: Die Endzeit des detektierten Ereignisses.
+
+PGV
+: Die Peak-Ground-Velocity (maximale Bodengeschwindigkeit) des Ereignisses.
+
+Dauer
+: Die Dauer des Ereignisses.
+
+Anzahl der Detektionsdreiecke
+: Die Anzahl der Dreiecke des Delaunay-Detektionsalgorithmus, die getriggert wurden. Das heißt, dass die PGV Werte aller drei Stationen des Dreiecks einen bestimmten Grenzwert überschritten haben.
+
+getriggerte Stationen:
+: Die Stationen, die getriggert wurden. Diese Stationen bilden die Eckpunkte der obigen Detektionsdreiecke.
+
+
+
+### Aktuelle Ereignisse
+
+{% include insert_image img="mss_vis_realtime_view_current_events.jpg" caption="Informationsabschnitt Aktuelle Ereignisse." %}
+
+Im Informationsabschnitt _Aktuelle Ereignisse_ werden die aktuellsten mit dem MSS Netzwerk detektierten Ereignisse angezeigt. Die angezeigten Ereignisse können gefiltert werden. Der Filter _Wahrnehmbar_ zeigt nur jene Ereignisse an, deren maximale PGV Werte den Grenzwert von 0.1 mm/s (Fühlbarkeitsschwelle) überschritten haben.
+
+Die Ereignisse werden als farbkodierte Rechtecke angezeigt. Die Farbe entspricht dem maximalen PGV Wert entsprechend der Farbskala in der Legende der [Kartenansicht][2]. Für jedes Ereignis wird der Startzeitpunkt des Ereignisses und die maximale PGV angezeigt.
+
+Durch das anklicken eines Ereignissymbols wechselt man in die [Archivansicht][1], in der das ausgewählte Ereignis angezeigt wird.
+
+### Stationsdetails
+
+{% include insert_image img="mss_vis_realtime_view_station_details.jpg" caption="Informationsabschnitt Stationsdetails mit der Anzeige der beiden Stationen PITT und WOPF." %}
+
+Im Informationsabschnitt _Stationsdetails_ können ausführliche Informationen zu ausgewählten Stationen angezeigt werden. Um die Details einer Station in diesem Abschnitt anzuzeigen, muss auf den Stationsmarker der gewünschten Station in der [Kartenansicht][2] geklickt werden. Die angezeigte Station kann über das _Schließen_ Button wieder aus dem Abschnitt entfernt werden.
+
+Für jede Station werden einige Metadaten (Name, Beschreibung und der Network:Station:Location-Code) sowie die aktuellen Daten der Station angezeigt.
+
+akt.PGV
+: Der aktuelle PGV Wert der Station.
+
+max. PGV
+: Der maximale PGV Wert der letzten 60 Sekunden.
+
+Verzögerung
+: Die Verzögerung der aktuellen Daten relativ zur Server Zeit.
+
+Mit dem Button _Zeige PGV Track_ kann die Zeitreihe der aktuellen PGV Werte der Station als [PGV Track][3] angezeigt werden. Das _Zeige PGV Track_ Button wechselt in diesem Falls zum _Verstecke PGV Track_ Button.
+Wird der PGV Track der Station bereits angezeigt kann dieser über das _Verstecke PGV Track_ Button wieder ausgeblendet werden.
+
+### PGV Track
+
+{% include insert_image img="mss_vis_realtime_view_pgv_tracks.jpg" caption="Ansichtsmodus Aktuell mit zwei PGV Tracks der Stationen PITT und WOPF." %}
+
+Die PGV Tracks der ausgewählten Stationen erscheinen im [Tracks Panel][4] oberhalb der Kartenansicht. Wird der Mauszeiger über die Zeitreihe geführt, so werden die Daten der Zeitreihe in einem Popup Fenster angezeigt. Überstieg der PGV Wert der angezeigten Zeitreihe den Wert von 0.1 mm/s, so wird die Zeitreihe orange eingefärbt.
+
+Die Höhe der Tracks kann individuell durch ziehen der Trennleiste der Tracks geändert werden.
+
+## Metadatentabelle
+
+{% include insert_image img="mss_vis_realtime_view_table_view.jpg" caption="Metadatentabelle im Ansichtsmodus Aktuell. Es wird eine Liste mit Metadaten und aktuellen Daten der Stationen angezeigt." %}
+
+Die Metadatentabelle kann durch das ziehen der Trennleiste am unteren Rand der Kartenansicht angezeigt und in seiner Größe veränder werden. Die Tabelle zeigt eine Liste mit Metadaten und aktuellen Messwerten der Stationen des MSS Netzwerks. Die Tabelle kann durch das klicken der Spaltenüberschrift entsprechend der gewählten Spalte auf- oder absteigend sortiert werden.
+
+NSL Code
+: Der Network:Station:Location Code der Station.
+
+Name
+: Der Name der Station.
+
+Beschreibung
+: Eine Kurzbeschreibung der Station.
+
+MSS Seriennummer
+: Die Seriennummer des MSS Datenrekorders, der an der Station plaziert ist.
+
+Länge
+: Geographische Länge der Position der Station.
+
+Breite
+: Geographische Breite der Position der Station.
+
+Höhe
+: Höhe über Meeresniveau der Position der Station.
+
+PGV [mm/s]
+: Aktueller Wert der an der Station gemessenen Peak-Ground-Velocity (maximale Bodenverschiebung) im mm/s.
+
+max. PGV letzte 60 s [mm/s]
+: Wert der an der Station gemessenen maximalen Peak-Ground-Velocity während der letzten 60 Sekunden.
+
+Verzögerung [s]
+: Die Verzögerung der aktuellen Daten relativ zur Server Zeit.
+
 
 [1]: {% link _doc/interactive_map/archive_view.md %}
+[2]: #kartenansicht
+[3]: #pgv-track
+[4]: /doc/interactive_map/general_structure#tracks-panel
