@@ -22,7 +22,7 @@
 
 
     {% if caption or credit %}
-        <figcaption class="center-caption">
+        <figcaption>
             {% if caption %}{{ caption | markdownify }}{% endif %} {%if credit %}<i>{{ credit | markdownify }}</i>{% endif %}
         </figcaption>
     {% endif %}
