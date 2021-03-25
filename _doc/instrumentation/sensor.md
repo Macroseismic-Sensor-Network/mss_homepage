@@ -54,25 +54,6 @@ Mit dieser Formel und den zuvor angegebenen Werten lässt sich die Empfindlichke
 {% include insert_image img="Sensor_Frequenzcharakteristik-1.jpg" caption="Frequenzcharakteristik des MacroSeismic-Sensors. Die Linie *MSS* zeigt die Amplitudenantwort des MSS, *alias* den zu erwartenden Aliasingeffekts des digitalen Filters des Analog-Digital Wandlers und *M 1,5* das theoretische Quellspektrum eines Erbebens mit einer lokalen Magnitude von 1.5."%}
 
 
-### Peak Ground Velocity
-Die Peak Ground Velocity (PGV) ist eine in der Ingenieurseismologie übliche Größe zur Bewertung der Belastung durch seismische Wellen. Sie gibt die maximale Schwinggeschwindigkeit an. Die für das MSS Netzwerk verwendete Formel zur Berechnung der PGV lautet:
-
-$$
-\mathrm{PGV} = \max_{t_1 \leq k \leq t_2}{\sqrt{\mathrm{HN}_k^2 + \mathrm{HP}_k^2}}
-$$
-
-$$\mathrm{HN_k}$$ und $$\mathrm{HP_k}$$ sind die zeitgleichen Amplituden der beiden horizontalen Komponeneten des MacroSeismic Sensors Hnormal und HParallel. Das Maximum wird über die Samples zwischen den Zeitpunkten $$t_1$$ und $$t_2$$ gebildet.
-
-### Kalibration
-Die relative Frequenzantwort des MacroSeismic Sensors bedingt eine Verringerung des mit den obigen Formeln ermittelten PGV – Wertes. Weiter wird für die Beurteilung von Sprengerschütterungen nicht PGV (Resultierende der Horizontalkomponenten), sondern VR (Resultierende aus allen drei Komponenten) herangezogen. Durch Vergleich mit den Daten eines, dem einschlägigen Normen ( DIN 45669, ÖNORM S 9020) entsprechenden 3-Komponenten Messsystems bestimmen wir daher Kalibrationsfaktoren, die eine Umrechnung von $$\mathrm{PGV}_{MSS}$$ (aus Daten des MacroSeismic Sensors) in PGV (aus Daten eines das Signalspektrum mit konstanter Empfindlichkeit erfassenden Messsystems) und VR ermöglichen. Ein derartiges Messsystem ist seit November 2017 im Steinbruch Dürnbach (Station DUBA) neben dem MacroSeismic Sensor AT11 installiert. Aus den bisherigen Vergleichsmessungen ergeben sich die folgenden Kalibrationsfaktoren:
-
-$$
-\frac{\mathrm{PGV}}{\mathrm{PGV}_{MSS}} = 1.04 \pm 0.13
-$$
-
-$$
-\frac{\mathrm{VR}}{\mathrm{PGV}} = 1.03 \pm 0.03
-$$
 
 
 [1]: https://www.bmbwf.gv.at/

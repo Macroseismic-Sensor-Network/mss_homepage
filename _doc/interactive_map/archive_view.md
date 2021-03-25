@@ -15,9 +15,11 @@ Im Ansichtsmodus _Archiv_ können die Daten archivierten Ereignisse angezeigt we
 
 Für jedes detektierte Ereignis werden auf dem MSS Server automatisch Zusatzdaten berechnet und als GeoJSON Dateien abgespeichert. Diese Zusatzdaten enthalten zum Beispiel die maximalen PGV Werte an den Stationen des MSS Netzwerks, den zeitlichen Verlauf der PGV Werte oder die Konturlinien einer Interpolation der PGV Werte.
 
-Sobald vom Benutzer ein Ereignis in der [Metadatentabelle][3] im [Tabellenpanel][1] ausgewählt wurde werden die verfügbaren Zusatzdaten des Ereignisses vom MSS Server geladen und zur Anzeige in der Kartenansicht im Zusatzdaten Abschnitt des Informationspanels zu Verfügung gestellt. Über eine Zeitleiste im linken unteren Eck der Kartenansicht kann durch Zusatzdaten, die eine Zeitreihe enthalten navigiert werden.
+Sobald vom Benutzer ein Ereignis in der [Metadatentabelle][3]{:target="blank"} im [Tabellenpanel][1] ausgewählt wurde werden die verfügbaren Zusatzdaten des Ereignisses vom MSS Server geladen und zur Anzeige in der Kartenansicht im Zusatzdaten Abschnitt des Informationspanels zu Verfügung gestellt. Über eine Abspielleiste im linken unteren Eck der Kartenansicht kann durch Zusatzdaten, die eine Zeitreihe enthalten navigiert werden. Durch einen Klick auf die Datums- und Zeitinformation in der Abspielleiste kann zwischen der [Universal Time Coordinated][9] (UTC) und der Mitteleuropäischen Zeit (MEZ) Zone gewechselt werden.
 
 {% include insert_image img="mss_vis_archive_view.jpg" caption="Visualisierung der Daten im Ansichtsmodus Archiv." %}
+
+{% include insert_image img="mss_vis_archive_view_player_controls.jpg" caption="Abspielleiste für Zusatzdaten, die Zeitreihen enthalten. Die Anzeige der Zeit erfolgt in UTC oder lokaler" %}
 
 ## Ereignisdetails
 
@@ -66,7 +68,7 @@ Wird der Mauszeiger über eines der Kreissymbole gehalten erscheint der Name der
 
 ### PGV Voronoizellen
 
-Die Zusatzdaten _PGV Voronoizellen_ beinhalten die Voronoizellen des [Voronoi-Diagramms][7] des MSS Netzwerks und den zugehörigen maximalen PGV Werte des Ereignisses. Nur die Stationen, für die während des Ereignisses Daten vorhanden waren werden für die Berechnung des Voronoi-Diagramms verwendet.
+Die Zusatzdaten _PGV Voronoizellen_ beinhalten die Voronoizellen des [Voronoi-Diagramms][7] des MSS Netzwerks und den zugehörigen maximalen PGV Werten des Ereignisses. Nur die Stationen, für die während des Ereignisses Daten vorhanden waren werden für die Berechnung des Voronoi-Diagramms verwendet.
 
 Die opaken Voronoizellen sind jene Zellen, deren Station bei der Detektion des Ereignisses getriggert wurde. Das heißt, daß diese Station zumindest einmal wären der Zeitdauer des Ereignisses das Triggerkriterium erfüllt hat.
 
@@ -98,25 +100,57 @@ Table: Zuordnung der PGV Werte zu Intensitäten der makroseismischen Intensität
 
 
 ### PGV Stationsmarker Zeitreihe
+
+Die Zusatzdaten _PGV Stationsmarker Zeitreihe_ beinhalten die maximalen PGV Werte des Ereignisses als Zeitreihe. Die Darstellung erfolgt analog zu den Zusatzdaten [PGV Stationsmarker][8]. Die Zeitreihe kann über die Abspielleiste abgespielt werden.
+
 <video controls style="width: 100%;">
 	<source src="/images/{{ page.image_dir | append: 'mss_vis_archive_view_pgv_marker_timeseries.mp4' }}" type="video/mp4">
 </video>
 
 
 ### PGV Voronoizellen Zeitreihe
+Die Zusatzdaten _PGV Voronoizellen Zeitreihe_ beinhalten eine Zeitreihe der Voronoizellen des Voronoi-Diagramms des MSS Netzwerks und den zugehörigen maximalen PGV Werten des Ereignisses. Die Darstellung erfolgt analog zu den Zusatzdaten [PGV Voronoizellen][10]. Die Zeitreihe kann über die Abspielleiste abgespielt werden.
+
 <video controls style="width: 100%;">
 	<source src="/images/{{ page.image_dir | append: 'mss_vis_archive_view_pgv_voronoi_cells_timeseries.mp4' }}" type="video/mp4">
 </video>
 
 
-## Metadatentabelle
+## Ereignistablle
 
+Die Ereignistabelle zeigt eine Liste mit den Ereignissen, die mit dem MSS Netzwerk detektiert wurden. Es werden die Ereignisse der letzten 30 Tage angezeigt. Die Tabelle kann durch das anklicken einer Spaltenüberschrift entsprechend der gewählten Spalte auf- oder absteigend sortiert werden.
+
+{% include insert_image img="mss_vis_archive_view_metadata_table.jpg" caption="Tabelle der Ereignisse im Ansichtsmodus Archiv." %}
+
+public_id
+: Die eindeutige ID des Ereignisses.
+
+Start
+: Die Startzeit des Ereignisses.
+
+Ende
+: Die Endzeit des Ereignisses.
+
+Dauer [s]
+: Die Dauer des Ereignisses in Sekunden.
+
+PGV [mm/s]
+: Die maximale Bodengeschwindigkeit (Peak-Ground-Velocity, PGV) des Ereignisses in mm/s.
+
+#Detektionen
+: Die Anzahl der Detektionsdreiecke, die während des Ereignisses getriggert wurden.
+
+#Stationen
+: Die Anzahl der Stationen, die währende des Ereignisses getriggert wurden.
 
 
 [1]: /doc/interactive_map/general_structure#tabellenpanel
 [2]: /doc/interactive_map/general_structure#kartenansicht
-[3]: #metadatentabelle
+[3]: #ereignistabelle
 [4]: /doc/interactive_map/realtime_view#aktuelle-ereignisse
 [5]: https://geojson.org/
 [6]: {% link _doc/interactive_map/realtime_view.md %}
 [7]: https://de.wikipedia.org/wiki/Voronoi-Diagramm
+[8]: #pgv-stationsmarker
+[9]: https://de.wikipedia.org/wiki/Koordinierte_Weltzeit
+[10]: #pgv-voronoizellen
