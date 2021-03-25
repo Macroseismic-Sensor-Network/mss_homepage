@@ -23,8 +23,22 @@ Das MacroSeismic Sensor Netzwerk informiert direkt, oder über öffentliche Stel
 ## Beitrag zur Erdbebenforschung
 Aktuelle Meldungen und historische Berichte über gefühlte seismische Wellen und Erdbebenschäden werden wissenschaftlich im Rahmen der Makroseismik ausgewertet. Während seismische Observatorien in entlegenen Gebieten eingerichtet wurden, beproben MacroSeismic Sensoren jene Gebiete, aus denen auch Meldungen kommen. Diese Daten können daher mit den Wahrnehmungsberichten in eine engere Beziehung gesetzt werden.
 
+
+## Kontakt
+
+Wir Fragen zum Macroseismic Sensor Netzwerk wenden Sie sich unter den folgenden Kontaktmöglichkeiten gerne an uns:
+
+Stefan Mertl
+: Email: [info@mertl-research.at][8]<br>Mastodon: [@mertlresearch@mastodon.social][9]{:target="blank"}
+
+Ewald Brückl
+: Email: [ewald.brueckl@geo.tuwien.ac.at][10]
+
 ## MSS Team
 Das **MacroSeismic-Sensor Team** is aus einer Zusammenarbeit im Rahmen der Sparkling Science Projekte *Schools & Quakes* und *QuakeWatch Austria* entstanden. Seit Jahresbeginn 2017 waren, beziehungsweise sind folgende Personen an der Weiterentwicklung, Produktion und Verteilung der MacroSeismic Sensoren, der erforderlichen Logistik und der Bedienung des Citizen Science Aspekts (z.B. Homepage) tätig:
+
+Mertl Research GmbH
+: Dr. Stefan Mertl ([Mertl Research GmbH][4]{:target="blank"})
 
 TU Wien, Department für Geodäsie und Geoinformation
 : Em.Univ.Prof. DI Dr. Ewald Brückl ([TU Wien, Department für Geodäsie und Geoinformation, Forschungsabteilung Geophysik][5]{:target="blank"})
@@ -37,9 +51,6 @@ Schüler\*innen des TGM Wien
 
 HTL Wiener Neustadt
 : DI Dr. Karl Filz, Ing. Martin Krieger, DI Gerald Stickler ([HTL Wiener Neustadt][7]{:target="blank"})
-
-Mertl Research GmbH
-: Dr. Stefan Mertl ([Mertl Research GmbH][4]{:target="blank"})
 
 Privatpersonen
 : Dr. Johanna Brückl, Ing. Peter Carniel
@@ -73,3 +84,6 @@ Baumit GmbH
 [5]: https://gp.geo.tuwien.ac.at/
 [6]: https://www.tgm.ac.at/
 [7]: https://www.htlwrn.ac.at/
+[8]: mailto:info@mertl-research.at
+[9]: https://mastodon.social/@mertlresearch
+[10]: mailto:ewald.brueckl@geo.tuwien.ac.at
