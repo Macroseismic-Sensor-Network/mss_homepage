@@ -15,10 +15,3 @@ main:
             de: "Info"
             en: "Info"
         url: "info/"
-
-    contact:
-        title:
-            de: "Kontakt"
-            en: "Contact"
-        url: "contact/"
-
