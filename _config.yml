@@ -43,7 +43,7 @@ image_dir: '/images/'
 markdown: kramdown
 permalink: /:categories/:title/
 highlight: rouge
-plugins: [jekyll-paginate]
+plugins: [jekyll-paginate, jekyll-scholar]
 excerpt_separator: "<!--more-->"
 include: ['.htaccess', '_pages', '_projects']
 # Exclude these files from your production _site
@@ -177,3 +177,27 @@ favicon-32x32:                          "mss_favicon_32x32.ico"
 sass:
     sass_dir: _sass
     style: :compressed
+
+
+#
+#
+#
+# SCHOLAR
+#
+#
+#
+#
+scholar:
+    style: ./_bibliography/ieee.csl
+    #style: ieee
+    locale: en
+
+    source: ./_bibliography
+    bibliography: references.bib
+    bibliography_template: bibtemplate
+
+    bibliography_list_tag: ul
+    bibliography_group_tag: strong
+
+    type_order: [article, phdthesis, inproceedings, techreport, misc]
+    type_aliases: {report: techreport}
