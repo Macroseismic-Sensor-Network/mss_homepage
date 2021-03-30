@@ -1,0 +1,7 @@
+PGV [mm/s],Intensität,Definition,Beschreibung
+< 0.1,1,nicht fühlbar,"Nicht fühlbar."
+0.1,2,kaum bemerkbar,"Nur sehr vereinzelt von ruhenden Personen wahrgenommen."
+0.316,3,schwach,"Von wenigen Personen in Gebäuden wahrgenommen. Ruhende Personen fühlen ein leichtes Schwingen oder Erschüttern."
+1.0,4,deutlich,"Im Freien vereinzelt, in Gebäuden von vielen Personen wahrgenommen. Einige Schlafende erwachen. Geschirr und Fenster klirren, Türen klappern."
+10.0,5,stark,"Im Freien von wenigen, in Gebäuden von den meisten Personen wahrgenommen. Viele Schlafende erwachen. Wenige werden verängstigt. Gebäude werden insgesamt erschüttert. Hängende Gegenstände pendeln stark, kleine Gegenstände werden verschoben. Türen und Fenster schlagen auf oder zu."
+100.0,6,leichte Gebäudeschäden,"Viele Personen erschrecken und flüchten ins Freie. Einige Gegenstände fallen um. An vielen Häusern, vornehmlich in schlechterem Zustand, entstehen leichte Schäden wie feine Mauerrisse und das Abfallen von z.B. kleinen Verputzteilen."
