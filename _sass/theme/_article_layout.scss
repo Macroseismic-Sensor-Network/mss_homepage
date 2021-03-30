@@ -1,6 +1,8 @@
 /* Article customization
 ------------------------------------------------------- */
 article {
+    counter-reset: cnt_fig cnt_table;
+    
     h1 {
 	margin-top: 3rem;
     }
@@ -20,11 +22,14 @@ article {
     }
 
     figcaption {
-	p {
 	    text-align: center;
 	    font-style: italic;
 	    line-height: 1.2;
-	}
+    }
+
+    figcaption::before {
+	    counter-increment: cnt_fig;
+	    content: "Abbildung " counter(cnt_fig) ": ";
     }
 
     table {
@@ -34,5 +39,14 @@ article {
 	    font-style: italic;
 	    line-height: 1.2;
 	}
+	caption::before {
+	    counter-increment: cnt_table;
+	    content: "Tabelle " counter(cnt_table) ": ";
+	}
+    }
+
+
+    ul.bibliography {
+	list-style-type: decimal;
     }
 }
