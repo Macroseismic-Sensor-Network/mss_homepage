@@ -9,4 +9,5 @@ subheadline: "Der Weg der Daten vom Sensor zur Homepage"
 teaser: ""
 description: ""
 image_dir: doc/instrumentation/data_flow
+published: false
 ---
