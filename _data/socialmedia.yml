@@ -3,3 +3,8 @@
   class: fas fa-atom
   title: Atom Feed
 
+- name: Github
+  url: https://github.com/macroseismic-sensor-network
+  class: fab fa-github
+  title: Github
+
