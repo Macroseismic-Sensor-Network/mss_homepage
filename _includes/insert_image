@@ -1,6 +1,6 @@
 {% comment %}
 *
-*   {% include image img="filename" caption="image_caption" credit="image_credits" %}
+*   {% include image img="filename" caption="image_caption" credit="image_credits" label="fig:label" %}
 *
 *   caption is optional
 *   credits is optional
@@ -9,7 +9,7 @@
 {% assign slug = page.title | slugify %}
 
 <div style="padding-bottom: 1.25rem; text-align: center;">
-    <a href="{{ site.image_dir | append: page.image_dir  | append: "/" | append: include.img | relative_url }}" data-featherlight="image" {% if include.caption %}caption="{{ include.caption }}"{% endif %}>
+    <a href="{{ site.image_dir | append: page.image_dir  | append: "/" | append: include.img | relative_url }}" data-featherlight="image" {% if include.caption %}caption="{{ include.caption }}"{% endif %} {% if include.label %}id="{{ include.label }}"{% endif %}>
         <img src="{{ site.image_dir | append: page.image_dir | append: "/" | append: include.img | relative_url }}" {% if include.caption %}alt="{{ include.caption }}" {% endif %}>
     </a>
 
@@ -23,8 +23,8 @@
 
     {% if caption or credit %}
         <figcaption>
-            {% if caption %}{{ caption | markdownify }}{% endif %} {%if credit %}<i>{{ credit | markdownify }}</i>{% endif %}
+            {% if caption %}{{ caption | markdownify | remove: "<p>" | remove: "</p>" }}{% endif %} {%if credit %}<i>{{ credit }}</i>{% endif %}
         </figcaption>
     {% endif %}
-
+    
 </div>
