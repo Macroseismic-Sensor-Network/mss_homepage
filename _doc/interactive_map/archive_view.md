@@ -58,6 +58,8 @@ Die Zusatzdaten können auch über das Download Button (links neben dem Auge-Sym
 
 {% include insert_image img="mss_vis_archive_view_complementary_data.jpg" caption="Informationsabschnitt Zusatzdaten im Ansichtsmodus Archiv. Über das Auge-Symbol können die Zusatzdaten ein- bzw. ausgeblendet werden. Mit dem Download-Button können die Zusatzdaten im GeoJSON Dateiformat heruntergeladen werden." %}
 
+Bei der Beurteilung der Zusatzdaten sind die [MSS Prinzipien bei der Verwendung von punktuellen Messdaten und der interpolierten, flächenhaften Darstellung][mss_prinzip] zu berücksichtigen.
+
 ### PGV Stationsmarker
 
 Die Zusatzdaten _PGV Stationsmarker_ beinhalten die maximalen PGV Werte während des Ereignisses. Die Darstellung der PGV Werte erfolgt als farb- und größenkodierte Kreissymbole an der Position der zugehörigen Station. Stationen, für die keine Daten vorhanden sind werden als kleine graue Kreissymbole angezeigt.
@@ -154,3 +156,4 @@ PGV [mm/s]
 [8]: #pgv-stationsmarker
 [9]: https://de.wikipedia.org/wiki/Koordinierte_Weltzeit
 [10]: #pgv-voronoizellen
+[mss_prinzip]: {% link _doc/amplification_factors_and_interpolation.md %}
