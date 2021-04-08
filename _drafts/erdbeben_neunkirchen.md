@@ -16,11 +16,11 @@ image:
 
 ## Hauptbeben
 
-Das Hauptbeben wurde am 30. März um 18:25:00 Ortszeit vom MSS Netzwerk detektiert. Die vom MSS Netzwerk gemessene maximale Bodengeschwindigkeit (Peak-Ground-Velocity, PGV) dieses Ereignisses betrug 16.682 mm/s und wurde an der Station ERLA in Bad Erlach gemessen.
+Das Hauptbeben wurde am 30. März um 18:25:00 Ortszeit vom MSS Netzwerk detektiert. Die vom MSS Netzwerk gemessene maximale Bodengeschwindigkeit (Peak-Ground-Velocity, PGV) dieses Ereignisses betrug 16.682 mm/s und wurde an der Station ERLA in Bad Erlach aufgezeichnet.
 
-Durch die unterschiedliche Art der Montage (z.B. Keller oder 1.Stock) der MSS an den einzelnen Stationen kommt es zu individuellen Verstärkungen der PGV. Durch das Anbringen von Stationskorrekturen zur Kompensation dieser lokalen Verstärkungen repräsentiert der korrigierte Wert eine größere Region rund um die Station und nicht nur den individuellen Aufstellungsort. In weiterer Folge wird bei der Besprechung der Erdbeben immer der korrigierte PGV Wert verwendet.
 
-Im Fall der zu Beginn angesprochenen maximalen PGV des Ereignisses an der Station ERLA reduziert sich diese auf 12.79 mm/s.
+
+
 
 
 
