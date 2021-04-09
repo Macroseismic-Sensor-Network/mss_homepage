@@ -8,17 +8,19 @@
 {% assign data = page.videos[include.key] %}
 
 
-<div style="padding-bottom: 1.25rem; text-align: center;">
-  <video controls style="width: 100%;">
+<div class="video-container">
+  <div style="width: 100%">
+  <video controls {% if data.label %}id="{{ data.label }}"{% endif %}>
 	<source src="{{ site.image_dir | append: page.image_dir | append: "/" | append: data.filename | relative_url }}" type="video/mp4">
   </video>
+  </div>
 
   {% if data.caption %}
     {% assign caption = data.caption %}
   {% endif %}
   
   {% if data.credit %}
-    {% assign credit = '(photo: ' | append: data.credit | append: ')' %}
+    {% assign credit = '(photo: ' | append: data.credit | append: ')' %}\
   {% endif %}
 
 
