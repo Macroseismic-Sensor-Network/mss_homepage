@@ -12,7 +12,7 @@
       {% else %}
         {% assign cp_date=site.time | date: '%Y' %}
       {% endif %}
-      <p class="copyright">Copyright <i>{{cp_date}} {{page.copyright.author}}</i>.</p>
+      <p class="copyright">Copyright &#169; <i>{{cp_date}} {{page.copyright.author}}</i>.</p>
     {% endif %}
     <p class="title">Dieser Artikel ist unter einer <a href="{{license.url}}" target="blank">{{license.name_long[page.lang]}} Lizenz</a> lizensiert.</p>
     <p class="description">{{license.description[page.lang]}}</p>
@@ -28,7 +28,7 @@
 <hr>
 <div class="licence-note grid-x grid-padding-x">
   <div class="cell auto">
-    <p class="copyright">Copyright <i>{{cp_date}} {{page.copyright.author}}</i>.</p>
+    <p class="copyright">Copyright &#169; <i>{{cp_date}} {{page.copyright.author}}</i>.</p>
   </div>                                                                                           
 </div>
 {% endif %}
