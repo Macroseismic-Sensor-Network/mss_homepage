@@ -5,7 +5,7 @@ type: section
 parent: instrumentation
 title: "Sensor"
 subheadline: "Der Macroseismic Sensor."
-teaser: ""
+teaser: "Der Macroseismic Sensor ist ein low-cost Messgerät zur Aufzeichnung der Bodengeschwindigkeit. Er besteht aus einem Raspberry Pi, einer ADC-Platine und zwei bis drei Geofonen."
 description: "Beschreibung des Macroseismic Sensors."
 image_dir: doc/instrumentation/sensor
 
