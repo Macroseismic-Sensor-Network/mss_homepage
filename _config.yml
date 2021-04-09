@@ -119,6 +119,8 @@ defaults:
             author: Stefan Mertl
             lang: de
             base_url: "/"
+            copyright:
+                author: "MSS Team"
     -
         scope:
             path: en
@@ -146,6 +148,13 @@ defaults:
           show_meta: true   # Show metadata for all posts
           comments: false
 
+    -
+        scope:
+          path: ""
+          type: "doc"
+        values:
+          license: cc-by-sa-4.0
+          
 #       ______            _
 #      / ____/___ __   __(_)________  ____  _____
 #     / /_  / __ `/ | / / / ___/ __ \/ __ \/ ___/
