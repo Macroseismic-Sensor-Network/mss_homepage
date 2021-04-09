@@ -35,18 +35,25 @@ layout: default
 			{% endif %}
 
 			<span itemprop="articleSection">
-                            {{ content }}
+                {{ content }}
 			</span>
 
+            {% include license_note.html %}
+
 			{% if page.show_meta == true %}
+                <hr>
 			    {% include meta_information.html %}
 			{% endif %}
 
 			{% if page.comments == true %}
+                <hr>
 			    {% include _comments.html %}
 			{% endif %}
+            
+            
 		</article>
 	</div>
+    
 </div>
 
 <div id="footer_content" class="grid-container full">
