@@ -8,6 +8,9 @@ copyright:
     date: 2021
     author: MSS Team
     
+categories: 
+    - review
+    
 tags:
     - review
     - earthquake
