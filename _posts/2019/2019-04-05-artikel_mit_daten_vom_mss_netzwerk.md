@@ -11,19 +11,22 @@ image_dir: posts/2019/2019-04-05-artikel_amplituden_lokalisierung
 image:
     header: "header_amplituden_lokalisierung.jpg"
 
-gallery:
-    - image_url: screenshot_fig_01.png
-      caption: Figure 1 of article 'Graphical Location of Seismic Sources Based on Amplitude Ratios'.
-    - image_url: screenshot_fig_02.png
-      caption: Figure 2 of article 'Graphical Location of Seismic Sources Based on Amplitude Ratios'.
-    - image_url: screenshot_fig_04.png
-      caption: Figure 4 of article 'Graphical Location of Seismic Sources Based on Amplitude Ratios'.
-    - image_url: screenshot_fig_05.png
-      caption: Figure 5 of article 'Graphical Location of Seismic Sources Based on Amplitude Ratios'.
-    - image_url: screenshot_fig_06.png
-      caption: Figure 6 of article 'Graphical Location of Seismic Sources Based on Amplitude Ratios'.
-
-
+galleries:
+    mag_figures:
+        label: 'gal:mag_figures'
+        number: 1
+        caption: "Abbildungen des Artikels."
+        images:
+            - filename: screenshot_fig_01.png
+              caption: Figure 1 of article 'Graphical Location of Seismic Sources Based on Amplitude Ratios'.
+            - filename: screenshot_fig_02.png
+              caption: Figure 2 of article 'Graphical Location of Seismic Sources Based on Amplitude Ratios'.
+            - filename: screenshot_fig_04.png
+              caption: Figure 4 of article 'Graphical Location of Seismic Sources Based on Amplitude Ratios'.
+            - filename: screenshot_fig_05.png
+              caption: Figure 5 of article 'Graphical Location of Seismic Sources Based on Amplitude Ratios'.
+            - filename: screenshot_fig_06.png
+              caption: Figure 6 of article 'Graphical Location of Seismic Sources Based on Amplitude Ratios'.
 ---
 
 Der Artikel kann über die [Seite der Zeitschift *Seismological Research Letters*][1]{:target="blank"} bezogen werden.
@@ -37,7 +40,7 @@ Das Potenzgesetz ist die einfachste empirische Beziehung, um die seismische Ampl
 
 ## Auszug von Bildern des Artikels
 
-{% include gallery name="gallery" image_dir=page.image_dir %}
+{% include insert_gallery.html key="mag_figures" %}
 
 [1]: https://pubs.geoscienceworld.org/ssa/srl/article-abstract/90/2A/784/567816/graphical-location-of-seismic-sources-based-on?redirectedFrom=fulltext
 
