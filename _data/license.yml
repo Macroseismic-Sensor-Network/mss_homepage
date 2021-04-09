@@ -1,0 +1,12 @@
+cc-by-sa-4.0:
+    name:
+        de: CC BY-SA 4.0
+        en: CC BY-SA 4.0
+    name_long:
+        de: Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International
+        en:
+    description:
+        de: Sie dürfen das Material <b>teilen</b>, das heißt in jedwedem Format oder Medium vervielfältigen und weiterverbreiten soferne Sie angemessene Urheber- und Rechteangaben machen. Sie dürfen das Material <b>bearbeiten</b>, das heißt es remixen, verändern und darauf aufbauen. Wenn Sie das Material remixen, verändern oder anderweitig direkt darauf aufbauen, dürfen Sie Ihre Beiträge nur unter derselben Lizenz wie das Original verbreiten.
+        en:       
+    url: http://creativecommons.org/licenses/by-sa/4.0/deed.de
+    icon_class: "cc cc-by-sa"
