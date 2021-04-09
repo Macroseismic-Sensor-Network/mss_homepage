@@ -58,18 +58,10 @@ layout: default
                             {{ page.teaser }}
                     </p>
                     {% endif %}
-
-                    <details open>
-                        <summary>{{ site.data.language[page.lang].on_this_page }}</summary>
-                        {% include toc.html html=content id="article_toc_menu" class="menu vertical"%}
-                    </details>
                     <hr>
 
 		    {% include doc_chapter_widget.html %}
 		    
-                    <article>
-                        {{ content }}
-                    </article>
             </div>
         </div>
     </div>
