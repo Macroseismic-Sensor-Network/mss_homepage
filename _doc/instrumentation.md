@@ -1,5 +1,5 @@
 ---
-layout: doc_page
+layout: doc_chapter
 lang-ref: instrumentation
 type: chapter
 nav_order: 4
@@ -9,4 +9,3 @@ teaser: "Die Instrumente des MSS Netzwerks low-cost Sensoren, die die Bodengesch
 description: "Beschreibung des Macroseismic Sensors."
 image_dir: doc/instrumentation
 ---
-Die Messgeräte des Macroseismic Sensor Netzwerks.

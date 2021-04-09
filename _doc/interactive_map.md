@@ -1,5 +1,5 @@
 ---
-layout: doc_page
+layout: doc_chapter
 lang-ref: interactive_map
 type: chapter
 nav_order: 2
