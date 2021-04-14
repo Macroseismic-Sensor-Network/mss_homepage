@@ -1,0 +1,7 @@
+assets/vue/nrt/data/map/
+msn_config/
+msn_ergebnisse/
+msn_realtime_data/
+stats/
+.htaccess
+.htpasswd

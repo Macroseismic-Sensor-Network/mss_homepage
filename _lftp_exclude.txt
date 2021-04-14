@@ -1,1 +1,0 @@
-assets/vue/nrt/data/map/
