@@ -6,7 +6,7 @@ parent: interactive_map
 nav_order: 2
 title: "Ansichtsmodus Aktuell"
 subheadline: "Die aktuellen Daten des MSS Netzwerks."
-teaser: "Im Ansichtsmodus Aktuell werden die Daten des MSS Netzwerks in annhähernd Echtzeit dargestellt. Die maximalen Bodengeschwindigkeitswerte (PGV) werden farb- und größenkodiert auf der Karte dargestellt und Zeitreihen ausgewählter Stationen können mitverfolgt werden."
+teaser: "Im Ansichtsmodus Aktuell werden die Daten des MSS Netzwerks in annähernd Echtzeit dargestellt. Die maximalen Bodengeschwindigkeitswerte (PGV) werden farb- und größenkodiert auf der Karte dargestellt und Zeitreihen ausgewählter Stationen können mitverfolgt werden."
 description: "Die Beschreibung der aktuellen Ansicht des MSS Netzwerks, die die Daten des MSS Netzwerks in annähernd Echtzeit aufbereitet."
 image_dir: doc/interactive_map/realtime_view/
 
@@ -64,7 +64,7 @@ In der Kartenansicht (dargestellt in [Abbildung {{ page.figures.map_view.number 
 
 Für jede Station werden jeweils zwei Kreise angezeigt. Der innere Kreis entspricht dem aktuellsten an der Station gemessenen PGV Wert. Der äußere, transparente Kreis stellt die maximale PGV der letzten 60 Sekunden dar. Damit lässt sich sehr schnell beurteilen, ob innerhalb dieser 60 Sekunden ein Ereignis stattfand, dass auf mehreren Stationen des Netzwerks einen hohen PGV Wert hervorrief.
 
-Übersteigt der PGV Wert den Grenzwert von 0.1 mm/s, so wird die Kontur des Kreises rot eingefärbt. Der Grenzwert 0.1 mm/s wird allgemein als Fühlbarkeitsschwelle. Ist die PGV oberhalb dieser Schwelle, wird angenommen, dass ein großteil der Menschen die Bodenerschütterung wahrnimmt.
+Übersteigt der PGV Wert den Grenzwert von 0.1 mm/s, so wird die Kontur des Kreises rot eingefärbt. Der Grenzwert 0.1 mm/s gilt allgemein als Fühlbarkeitsschwelle. Ist die PGV oberhalb dieser Schwelle, wird angenommen, dass ein Großteil der Menschen die Bodenerschütterung wahrnimmt.
 
 Stationen, für die keine aktuellen Daten vorhanden sind werden als kleine graue Kreise dargestellt.
 
@@ -78,27 +78,24 @@ Im Informationspanel auf der rechten Seite sind die Informationsabschnitte _Stat
 Der Status zeigt einige Parameter, die den Zustand der Serververbindung und des Datentransports beschreiben.
 
 Server Zeit
-: Die Zeit des Servers zum Zeitpunkt des Sendens der letzten Daten.
+: Die Zeit des Servers zum Zeitpunkt des Sendens der letzten Daten vom Server an den Browser der Benutzer*in.
 
 Server Status
 : Der Server Status gibt den aktuellen Zustand zum MSS Datenserver an.
 
 min. Verzögerung
-: Die kleinste Verzögerung der aktuellen Daten der MSS Stationen relativ zur Server Zeit.
+: Die kleinste Verzögerung der aktuellen seismischen Daten der MSS Stationen relativ zur Server Zeit.
 
 max. Verzögerung
-: Die maximale Verzögerung der aktuellen Daten des MSS Stationen relativ zur Server Zeit.
+: Die maximale Verzögerung der aktuellen seismischen Daten des MSS Stationen relativ zur Server Zeit.
 
 
 ### Ereignis Monitor
 
-Der Ereignis Monitor zeigt den Zustand des Detektionsprozesses auf dem MSS Server an. Sobald der Beginn eines Ereignisses detektiert wurde werden Detail zu diesem aktuellen Ereignis im Ereignis Monitor dargestellt. In diesem Fall werden die folgenden Parameter des im Moment in der Detektion befindlichen Ereignisses dargestellt.
+Der Ereignis Monitor zeigt den Zustand des Detektionsprozesses auf dem MSS Server an. Sobald der Beginn eines Ereignisses detektiert wurde, werden Details zu diesem aktuellen Ereignis im Ereignis Monitor dargestellt. In diesem Fall werden die folgenden Parameter des im Moment in der Detektion befindlichen Ereignisses dargestellt.
 
 public_id
 : Die eindeutige ID des Ereignisses.
-
-Status
-: Der Status der Detektion.
 
 Start
 : Die Startzeit des detektierten Ereignisses.
@@ -124,7 +121,7 @@ getriggerte Stationen:
 
 {% include insert_image.html key="current_events" %}
 
-Der in [Abbildung {{ page.figures.current_events.number }}][fig:current_events] dargestellte Informationsabschnitt _Aktuelle Ereignisse_ werden die aktuellsten mit dem MSS Netzwerk detektierten Ereignisse angezeigt. Die angezeigten Ereignisse können gefiltert werden. Der Filter _Wahrnehmbar_ zeigt nur jene Ereignisse an, deren maximale PGV Werte den Grenzwert von 0.1 mm/s (Fühlbarkeitsschwelle) überschritten haben.
+Der in [Abbildung {{ page.figures.current_events.number }}][fig:current_events] dargestellte Informationsabschnitt _Aktuelle Ereignisse_ stellt die aktuellsten mit dem MSS Netzwerk detektierten Ereignisse dar. Die angezeigten Ereignisse können gefiltert werden. Der Filter _Wahrnehmbar_ zeigt nur jene Ereignisse an, deren maximale PGV Werte den Grenzwert von 0.1 mm/s (Fühlbarkeitsschwelle) überschritten haben.
 
 Die Ereignisse werden als farbkodierte Rechtecke angezeigt. Die Farbe entspricht dem maximalen PGV Wert entsprechend der Farbskala in der Legende der [Kartenansicht][2]. Für jedes Ereignis wird der Startzeitpunkt des Ereignisses und die maximale PGV angezeigt.
 
@@ -134,7 +131,7 @@ Durch das anklicken eines Ereignissymbols wechselt man in die [Archivansicht][1]
 
 {% include insert_image.html key="station_details" %}
 
-Im Informationsabschnitt _Stationsdetails_ (siehe [Abbildung {{ page.figures.station_details.number }}][fig:station_details]) können ausführliche Informationen zu ausgewählten Stationen angezeigt werden. Um die Details einer Station in diesem Abschnitt anzuzeigen, muss auf den Stationsmarker der gewünschten Station in der [Kartenansicht][2] geklickt werden. Die angezeigte Station kann über das _Schließen_ Button wieder aus dem Abschnitt entfernt werden.
+Im Informationsabschnitt _Stationsdetails_ (siehe [Abbildung {{ page.figures.station_details.number }}][fig:station_details]) können ausführliche Informationen zu ausgewählten Stationen angezeigt werden. Um die Details einer Station in diesem Abschnitt anzuzeigen, muss auf den Stationsmarker der gewünschten Station in der [Kartenansicht][2] geklickt werden. Die angezeigte Station kann über den _Schließen_ Button wieder aus dem Abschnitt entfernt werden.
 
 Für jede Station werden einige Metadaten (Name, Beschreibung und der Network:Station:Location-Code) sowie die aktuellen Daten der Station angezeigt.
 
@@ -147,8 +144,8 @@ max. PGV
 Verzögerung
 : Die Verzögerung der aktuellen Daten relativ zur Server Zeit.
 
-Mit dem Button _Zeige PGV Track_ kann die Zeitreihe der aktuellen PGV Werte der Station als [PGV Track][3] angezeigt werden. Das _Zeige PGV Track_ Button wechselt in diesem Falls zum _Verstecke PGV Track_ Button.
-Wird der PGV Track der Station bereits angezeigt kann dieser über das _Verstecke PGV Track_ Button wieder ausgeblendet werden.
+Mit dem Button _Zeige PGV Track_ kann die Zeitreihe der aktuellen PGV Werte der Station als [PGV Track][3] angezeigt werden. Der _Zeige PGV Track_ Button wechselt in diesem Falls zum _Verstecke PGV Track_ Button.
+Wird der PGV Track der Station bereits angezeigt kann dieser über den _Verstecke PGV Track_ Button wieder ausgeblendet werden.
 
 ### PGV Track
 
@@ -186,7 +183,7 @@ Höhe
 : Höhe über Meeresniveau der Position der Station.
 
 PGV [mm/s]
-: Aktueller Wert der an der Station gemessenen Peak-Ground-Velocity (maximale Bodenverschiebung) im mm/s.
+: Aktueller Wert der an der Station gemessenen Peak-Ground-Velocity (maximale Bodengeschwindigkeit) im mm/s.
 
 max. PGV letzte 60 s [mm/s]
 : Wert der an der Station gemessenen maximalen Peak-Ground-Velocity während der letzten 60 Sekunden.

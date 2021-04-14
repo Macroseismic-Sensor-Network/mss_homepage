@@ -75,7 +75,7 @@ videos:
         caption: "Animationdes Abspielens der PGV Voronoizellen Zeitreihe in der Archivansicht."
 ---
 
-Im Ansichtsmodus _Archiv_ können die Daten archivierten Ereignisse angezeigt werden (siehe [Abbildung {{ page.figures.archive_view.number }}][fig:archive_view]). In diesen Ansichtsmodus kann über das [Ansichtsmodus-Button][2] im rechten oberen Eck der Kartenansicht gewechselt werden oder indem im Ansichtsmodus _Aktuell_ ein Ereignis im Informationsabschnitt [Aktuelle Ereignisse][4] angeklickt wird. Um den Archiv Ansichtsmodus eindeutig vom [Ansichtsmodus Aktuell][6] zu unterscheiden, sind die Farben aller Hintergrundkarten entsättigt.
+Im Ansichtsmodus _Archiv_ können die Daten archivierter Ereignisse angezeigt werden (siehe [Abbildung {{ page.figures.archive_view.number }}][fig:archive_view]). In diesen Ansichtsmodus kann über den [Ansichtsmodus-Button][2] im rechten oberen Eck der Kartenansicht gewechselt werden oder indem im Ansichtsmodus _Aktuell_ ein Ereignis im Informationsabschnitt [Aktuelle Ereignisse][4] angeklickt wird. Um den Archiv Ansichtsmodus eindeutig vom [Ansichtsmodus Aktuell][6] zu unterscheiden, sind die Farben aller Hintergrundkarten entsättigt.
 
 {% include insert_image.html key="archive_view" %}
 
@@ -91,9 +91,6 @@ Im Informationsabschitt Ereignisdetails werden die Metadaten des ausgewählten E
 
 public_id
 : Die eindeutige ID des Ereignisses.
-
-Status
-: Der Status der Detektion.
 
 Start
 : Die Startzeit des detektierten Ereignisses.
@@ -118,7 +115,7 @@ getriggerte Stationen:
 
 Der in [Abbildung {{ page.figures.comp_data.number }}][fig:comp_data] dargestellte Informationsabschnitt _Zusatzdaten_ werden die für das ausgewählte Ereignis verfügbaren Zusatzdaten angezeigt. Die jeweiligen Zusatzdaten können als eigenständige Ebenen in der Karte eingeblendet werden. Zum ein- und Ausblenden können die Buttons mit dem Auge-Symbol (rechts außen) verwendet werden. Das volle Auge zeigt an, dass die entsprechende Ebene in der Karte angezeigt wird, ein durchgestrichenes Auge markiert eine versteckte Ebene.
 
-Die Zusatzdaten können auch über das Download Button (links neben dem Auge-Symbol) im [GeoJSON][5]{:target="blank"} Dateiformat heruntergeladen werden.
+Die Zusatzdaten können auch über den Download Button (links neben dem Auge-Symbol) im [GeoJSON][5]{:target="blank"} Dateiformat heruntergeladen werden.
 
 Bei der Beurteilung der Zusatzdaten sind die [MSS Richtlinien][mss_guideline] bei der Verwendung von punktuellen Messdaten und der interpolierten, flächenhaften Darstellung zu berücksichtigen.
 

@@ -33,7 +33,7 @@ figures:
         label: "fig:information_panel"
         number: 4
         filename: "mss_vis_information_panel_annotated.jpg"
-        caption: "Das Informationspanel ist in ausklappbare Informationsabschitte unterteilt. Abschnitt (1) zeigt zum Beispiel den aktuellen Status der Kartenansicht. Zum aus- und einblenden der Informationsabschnitte kann das Drop-Down Button (2) verwendet werden."
+        caption: "Das Informationspanel ist in ausklappbare Informationsabschitte unterteilt. Abschnitt (1) zeigt zum Beispiel den aktuellen Status der Kartenansicht. Zum aus- und einblenden der Informationsabschnitte kann der Drop-Down Button (2) verwendet werden."
         
     
 ---
@@ -58,7 +58,7 @@ Die Größe der Panele kann per Drag-And-Drop der Trennleiste zweier Panele ver�
 
 ## Kartenansicht
 
-Die Kartenansicht in [Abbildung {{ page.figures.map_view.number }}][fig:map_view] ist das Kernstück der MSS Datenvisualisierung. Sie zeigt die Daten des jeweiligen Ansichtsmodus. Der Ansichtsmodus kann durch das anklicken des Buttons 1 im rechten oberen Eck gewechselt werden. In der Karte lässt sich wie von anderen Kartenanwendungen im Internet navigieren. Per Drag-And-Drop lässt sich die Karte verschieben und mit dem Mausrad kann die Karte vergrößert bzw. verkleinert werden. Das Zoomen der Karte kann alternativ mit den + und - Buttons (2) durchgeführt werden. Die Art der Hintergrundkarte kann über das Layer-Auswahl Button (3) ausgewählt werden.
+Die Kartenansicht in [Abbildung {{ page.figures.map_view.number }}][fig:map_view] ist das Kernstück der MSS Datenvisualisierung. Sie zeigt die Daten des jeweiligen Ansichtsmodus. Der Ansichtsmodus kann durch das anklicken des Buttons 1 im rechten oberen Eck gewechselt werden. In der Karte lässt sich wie von anderen Kartenanwendungen im Internet navigieren. Per Drag-And-Drop lässt sich die Karte verschieben und mit dem Mausrad kann die Karte vergrößert bzw. verkleinert werden. Das Zoomen der Karte kann alternativ mit den + und - Buttons (2) durchgeführt werden. Die Art der Hintergrundkarte kann über den Layer-Auswahl Button (3) ausgewählt werden.
 
 Die Legende (4) im rechten unteren Eck stellt die Farb- und Größenkodierung der angezeigten Datenwerte dar.
 
@@ -67,7 +67,7 @@ Die Legende (4) im rechten unteren Eck stellt die Farb- und Größenkodierung de
 
 ## Informationspanel
 
-[Abbildung {{ page.figures.information_panel.number }}][fig:information_panel] zeigt das Informationspanel mit dem ausgeklapptem Informationsabschnitt _Status_. Im Informationspanel werden Kontextabhängige Informationsabschnitte (1) angezeigt. Diese Abschnitte sind als ausklappbare Elemente realisiert und können über das Drop-Down Button (2) angezeigt bzw. wieder versteckt werden. Sollte für die Darstellung von Daten in einem Informationsabschnitt noch zusätzliche Benutzerinteraktionen notwendig sein, so wird das im jeweiligen Informationsabschnitt beschrieben.
+[Abbildung {{ page.figures.information_panel.number }}][fig:information_panel] zeigt das Informationspanel mit dem ausgeklapptem Informationsabschnitt _Status_. Im Informationspanel werden Kontextabhängige Informationsabschnitte (1) angezeigt. Diese Abschnitte sind als ausklappbare Elemente realisiert und können über den Drop-Down Button (2) angezeigt bzw. wieder versteckt werden. Sollte für die Darstellung von Daten in einem Informationsabschnitt noch zusätzliche Benutzerinteraktionen notwendig sein, so wird das im jeweiligen Informationsabschnitt beschrieben.
 
 {% include insert_image.html key="information_panel" %}
 
