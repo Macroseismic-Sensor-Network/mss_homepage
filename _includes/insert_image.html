@@ -17,7 +17,7 @@
         {% assign caption = data.caption %}
     {% endif %}
     {% if data.credit %}
-        {% assign credit = '(photo: ' | append: data.credit | append: ')' %}
+        {% assign credit = '(Quelle: ' | append: data.credit | markdownify | remove: "<p>" | remove: "</p>" | append: ')' %}
     {% endif %}
 
 
