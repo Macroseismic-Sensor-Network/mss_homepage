@@ -1,4 +1,4 @@
-{% if page.license %}
+{% if page.license and page.license != "None" %}
 {% assign license = site.data.license[page.license] %}
 <hr>
 <div class="licence-note grid-x grid-padding-x">
