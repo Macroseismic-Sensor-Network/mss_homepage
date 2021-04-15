@@ -8,6 +8,7 @@ subheadline: "Publikationen mit Bezug zum MSS Netzwerk"
 teaser: "Die Bibliografie gibt einen Überblick über Publikationen, die vom MSS Team verfasst wurden, oder die einen direkten Bezug zum MSS Netzwerk haben."
 description: "Publikationen mit Bezug zum MSS Netzwerk."
 image_dir: doc/publications
+license: None
 ---
 
 ## Mit Beteiligung vom MSS Team
