@@ -9,6 +9,14 @@ teaser: "Die maximale Bodengeschwindigkeit wird als Peak-Ground-Velocity (PGV) b
 description: ""
 image_dir: "doc/pgv"
 
+figures:
+    pgv_int:
+        label: fig:pgv_intensity_pairs
+        number: 1
+        caption: "Anzahl der PGV-Intensityätspaare, die die als nicht gefühlt (not felt) bzw. gefühlt (felt) eingestuft wurden (a). Darstellung der PGV-Intensitätspaare mit der empirisch bestimmten PGV-Intensitätsbeziehung."
+        filename: intech_pgv_to_intensity.png
+        credit: "Brückl et.al., 2021"
+
 tables:
     ems98_kurz:
         label: "tab:ems98_kurz"
@@ -44,13 +52,13 @@ Die europäische Makroseismische Skala (EMS-98) dient zur Bestimmung der makrose
 
 Die makroseismische Intensität beruht auf Beobachtungen der Auswirkung der Bodenerschütterung auf die Umwelt. Einen klar definierten Zusammenhang zu einem physikalischen Messwert wie der Bodengeschwindigkeit gibt es nicht, da die Auswirkungen der Bodenerschütterung nicht nur von deren Amplitude, sondern auch von der individuellen Wahrnehmung, dem Aufenthaltsort (z.B. auf einer weiten Wiese oder im obersten Stock eines Hochhauses, der Bausubstanz der Infrastruktur und vielen weiteren, teils subjektiven Wahrnehmungen abhängt.
 
-Die Zuordnung der maximalen Bodengeschwindigkeit erfolgt über empirische Beziehungen, die speziell für einzelne Regionen bestimmt werden müssen. Im Zeitraum von Oktober 2017 bis Oktober 2020 wurde für 16 Erdbeben im Bereich des MSS Netzwerks die makroseismische Intensität durch den seismologischen Dienst der ZAMG bestimmt. Die Bestimmung erfolgte entsprechend der EMS-98 Skala. Mit diesem Datenmaterial wurde eine Beziehung von makroseismischen Intensitäten zu an Stationen des MSS Netzwerks gemessenen PGV Werten erstellt. Die makroseismischen Intensitätswerte, die an diskreten Positionen vorliegen, werden den MSS Stationen zugeordnet. Makroseismische Intensitätswerte in einem Umkreis von 5 km einer Station wurden dieser zugewiesen. Insgesamt wurden auf diese Weise 120 PGV-Intensitätspaare erstellt.
+Die Zuordnung der maximalen Bodengeschwindigkeit erfolgt über empirische Beziehungen, die speziell für einzelne Regionen bestimmt werden müssen. Im Zeitraum von Oktober 2017 bis Oktober 2020 wurde für 16 Erdbeben im Bereich des MSS Netzwerks die makroseismische Intensität durch den seismologischen Dienst der ZAMG bestimmt. Die Bestimmung erfolgte entsprechend der EMS-98 Skala. Mit diesem Datenmaterial wurde eine Beziehung von makroseismischen Intensitäten zu an Stationen des MSS Netzwerks gemessenen PGV Werten erstellt {% cite bruckl_seismological_2021 %}. Die makroseismischen Intensitätswerte, die an diskreten Positionen vorliegen, werden den MSS Stationen zugeordnet. Makroseismische Intensitätswerte in einem Umkreis von 5 km einer Station wurden dieser zugewiesen. Insgesamt wurden auf diese Weise 120 PGV-Intensitätspaare erstellt.
 
 [Abbildung 1a][fig:pgv_int] zeigt die Verteilung der PGV-Intensitätspaare für unterschiedliche PGV Bereiche entsprechend der beiden Klassen _gefühlt_ und _nicht gefühlt_. Die Anzahl der _gefühlt_ Klasse übersteigt die _ungefühlte_ ab dem Bereich 0.1-0.3 mm/s. Aus diesem Grund haben verwenden wir für die Fühlbarkeitschwelle den Werte PGV = 0.1 mm/s.
 
 Die hohe Streuung der PGV-Intensitätspaare ist in [Abbildung 1b][fig:pgv_int] zu erkennen. Sie übersteigt teilweise eine Größenordnung. Aus der zuvor bestimmten Fühlbarkeitsschwelle, die der Intensität I = 2 der EMS-98 Skala entspricht und der Verteilung der PGV-Intensitätspaare wurde empirisch die in [Abbildung 1b][fig:pgv_int] dargestellte nichtlineare PGV-Intensitätsbeziehung ermittelt. [Tabelle {{ page.tables.pgv_to_intensity.number }}][tab:pgv_to_intensity] zeigt die den Intensitäten zugeordneten PGV Werte. 
 
-{% include insert_image img="intech_pgv_to_intensity.png" caption="Anzahl der PGV-Intensityätspaare, die die als nicht gefühlt (not felt) bzw. gefühlt (felt) eingestuft wurden (a). Darstellung der PGV-Intensitätspaare mit der empirisch bestimmten PGV-Intensitätsbeziehung." label="fig:pgv_intensity_pairs" %}
+{% include insert_image.html key="pgv_int" %}
 
 {% include insert_table.html key="pgv_to_intensity" %}
 
@@ -67,8 +75,15 @@ $$
 $$
 
 
+## Bibliografie
+{% bibliography --cited %}
+
+
 [1]: https://www.gfz-potsdam.de/ems98/sprachversionen-ems-98/
 [2]: http://media.gfz-potsdam.de/gfz/sec26/resources/documents/PDF/EMS-98_short_form_German_PDF.pdf
 [3]: http://media.gfz-potsdam.de/gfz/sec26/resources/documents/PDF/EMS-98_core_part_German.pdf
+
 [tab:ems98_kurz]: #{{ page.tables.ems98_kurz.label }}
-[fig:pgv_int]: #fig:pgv_intensity_pairs
+[tab:pgv_to_intensity]: #{{page.tables.pgv_to_intensity.label}}
+
+[fig:pgv_int]: #{{page.figures.pgv_int.label}}
