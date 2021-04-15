@@ -62,7 +62,7 @@ layout: default
 
                     <details open>
                         <summary>{{ site.data.language[page.lang].on_this_page }}</summary>
-                        {% include toc.html html=content id="article_toc_menu" class="menu vertical"%}
+                        {% include toc.html html=content h_max=2 sanitize=true id="article_toc_menu" class="menu vertical"%}
                     </details>
                     <hr>
 
