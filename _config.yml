@@ -198,15 +198,14 @@ sass:
 #
 scholar:
     style: ./_bibliography/ieee.csl
-    #style: ieee
-    locale: en
+    locale: de
 
     source: ./_bibliography
     bibliography: references.bib
     bibliography_template: bibtemplate
 
     bibliography_list_tag: ul
-    bibliography_group_tag: strong
+    bibliography_group_tag: h3
 
     type_order: [article, phdthesis, inproceedings, techreport, misc]
     type_aliases: {report: techreport}
