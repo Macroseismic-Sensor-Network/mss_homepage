@@ -3,7 +3,7 @@
 # everytime you work locally on the project, you start both config-files, overwriting
 # the first one with the development variables needed.
 #
-# Start development with › $ jekyll serve --config _config.yml,_config_dev.yml
+# Start development with › $ bundle exec jekyll serve --config _config.yml,_config_dev.yml
 # Use the --drafts flag to show draft posts
 # Use the --unpublished flag to show posts and pages marked as unpublished (published: false in the front matter). 
 
