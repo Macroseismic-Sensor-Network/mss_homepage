@@ -26,9 +26,9 @@
 
                 <p class="content">
                     {% if post.meta_description %}
-                    {{ post.meta_description | strip_html | escape }}
+                    {{ post.meta_description | strip_html | markdownify }}
                     {% elsif post.teaser %}
-                    {{ post.teaser | strip_html | escape }}
+                    {{ post.teaser | strip_html | markdownify }}
                     {% endif %}
                 </p>
 
