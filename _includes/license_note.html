@@ -17,6 +17,12 @@
     <p class="title">Dieser Artikel ist unter einer <a href="{{license.url}}" target="blank">{{license.name_long[page.lang]}} Lizenz</a> lizensiert.</p>
     <p class="description">{{license.description[page.lang]}}</p>
     <p class="attribution">Wenn möglich, verwenden Sie die folgende Form um diesen Artikel zu zitieren:<br><a href="{{page.url}}">"{{page.title}}"</a>, <a href="/info" target="blank">{{page.copyright.author}}</a>, {{page.date | date: '%Y-%m-%d'}}, <a href="https://www.macroseismicsensor.at">www.macroseismicsensor.at</a>, lizensiert unter <a href="{{license.url}}" target="_blank">{{license.name[page.lang]}}</a></p>
+    {% if page.basedon %}
+      basierend auf:<br>
+      {% for cur_basedon in page.basedon %}
+        <p class="basedon">{{cur_basedon}}</p>
+      {% endfor %}
+    {% endif %}
   </div>
 </div>
 {% elsif page.copyright %}
