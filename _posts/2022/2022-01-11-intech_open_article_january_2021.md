@@ -460,7 +460,39 @@ $$ center of the Apollonius circle or sphere
 
 
 ## Bibliografie
-{% bibliography --cited %}
+[1] Allen PA, Allen JR. Basin Analysis Principles and Applications, Oxford: Blackwell Science; 1990. 451 p; ISBN 0–632-02422
+
+[2] Ratschbacher L, Frisch W, Linzer H-G, Merle O. Lateral extrusion in the Eastern Alps, Part 2: Structural analysis.Tectonics. 1991; 10:2, 257–271
+
+[3] Austrian Earthquake Catalogue, computer file, Austrian Seismological Service, Zentralanstalt für Meteorologie und Geodynamik, Vienna
+
+[4] Brückl E, Köberl C, Lenhardt W, Mertl S, Rafeiner-Magor W, Stark A, Stickler G, Weber R. Scientific goals of SCHOOLS & QUAKES. Geophysical Research Abstracts. 2015; 17, EGU General Assembly 2015, EGU2015–3401-4
+
+[5] Cochran ES, Lawrence J, Christensen C, Jakka RS. The Quake-Catcher Network: Citizen science expanding seismic horizons. Seismological Research Letters. 2009; 80:1, 26–30, DOI: 10.1785/gssrl.80.1.26
+
+[6] Anthony RE, Ringler AT, Wilson DC, Wolin E. Do low-cost seismographs perform well enough for your network? An overview of laboratory tests and field observations of the OSOP Raspberry Shake 4D. Seismological Research Letters. 2018; 90:1, 219–228, DOI:10.1785/02200220180251
+
+[7] Delaunay B. Sur la sphère vide. Bulletin de l'Académie des Sciences de URSS, Classe des Sciences Mathématiques et Naturelles. 1934; 6, 793–800
+
+[8] Voronoï G. Nouvelles applications des paramètres continus à la théorie des formes quadratiques. Premier mémoire. Sur quelques propriétés des formes quadratiques positives parfaites. Journal für die Reine und Angewandte Mathematik. 1908; 133, 97–178. DOI:10.1515/crll.1908.133.97
+
+[9] Wald D, Quitoriano V, Heaton T.Kanamori H. Relationships between Peak Ground Acceleration, Peak Ground Velocity, and Modified Mercalli Intensity. Earthquake Spectra. 1999; 15: 3, 557–564. ISSN 8755–2930
+
+[10] Brückl E. Graphical Location of Seismic Sources Based on Amplitude Ratios. Seismological Research Letters. 2019; 90:22, 784–789. DOI: 10.1785/0220180216
+
+[11] Brückl E, Filz K, Hochwartner R, Mertl S, Stickler G, Zöhling S.Monitoring von Sprengerschütterungen mit seismischen „low-cost “Sensoren. BHM Berg- und Hüttenmännische Monatashefte. 2019; 164:10, 431–437. DOI: 10.1007/s00501-019-00892-z
+
+[12] Kanamori H. Locating earthquakes with amplitude: Application to real-time seismology. Bull. Seismol. Soc. Am.1993; 83, 264–268
+
+[13] Geiger L. Probability method for the determination of earthquake epicenters from the arrival time only. Bull. St.Louis Univ. 1912; 8, 60–71
+
+[14] Hopkins W. Report on the geological theories of elevation and earthquakes. Report of the British Association for the Advancement 0f Science. 1848; 21, 33–92
+
+[15] Mohorovičić A. Die Bestimmung des Epizentrums eines Nahbebens. Gerlands Beitr. zur Geophysik. 1916; 14, 199–205
+
+[16] Lahr JC. HYPOELLIPSE -Version 2.0: A computer program for determining local earthquake hypocentral parameters, magnitude and first motion pattern. U.S. Geological Survey Open-File Report. 1989; 99.119 p
+
+[17] Lomax A. Probabilistic, non-linear, global-search earthquake location in 3D media. 2017. Available from http://alomax.free.fr/nlloc/ [Accessed:2020-10-31]
 
 
 [lnk:article]: https://www.intechopen.com/chapters/74466
