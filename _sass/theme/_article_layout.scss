@@ -96,4 +96,28 @@ article {
             max-height: 700px;
         }       
     }
+
+    mjx-container {
+        min-width: unset !important;
+        .MJX-TEX {
+            @include breakpoint(small) {
+                font-size: 0.8rem !important;
+                mjx-mtable {
+                    text-align: left;
+                }
+            }
+            @include breakpoint(medium) {
+                font-size: 0.9rem !important;
+                mjx-mtable {
+                    text-align: center;
+                }
+            }
+            @include breakpoint(large) {
+                font-size: 1.0rem !important;
+                mjx-mtable {
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
