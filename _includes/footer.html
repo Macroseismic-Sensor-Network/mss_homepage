@@ -9,7 +9,7 @@
 
     <footer id="footer-content" class="bg-grau">
         <div id="footer" class="grid-x grid-padding-x full">
-          <div class="cell small-8 medium-9">
+          <div class="cell small-12 medium-4 large-3">
             <h5>Imprint</h5>
 
             <p>
@@ -22,8 +22,25 @@
             </p>
           </div>
 
+          <div class="cell small-12 medium-6 large-7">
+            <h5>Unterstützt durch</h5>
+            <div class="flex-container" style="flex-wrap: wrap;">
+            {% for cur_supporter in site.data.supporter %}
+            {% assign cur_supporter_key = cur_supporter[0] %}
+            {% assign cur_supporter_data = cur_supporter[1] %}
+            {% assign cur_year =  'now' | date: "%Y" | plus: 0 %}
+            {% if cur_supporter_data.sponsoring contains cur_year %} 
+              <div style="padding-right: 10px; padding-bottom: 10px">      
+                <a href="{{ cur_supporter_data.url }}" target="blank"><img src="{{ site.image_dir | append: 'supporter/' | append: cur_supporter_data.logo | relative_url }}" style="width: 100%; min-width: 70px; max-width: 70px" alt="{{ cur_supporter_data.name }} Logo" title="{{ cur_supporter_data.name }} Logo"/></a>
+              </div>
+            {% endif %}
+            {% endfor %}
+            </div>
+            <br>  
+          </div>
 
-          <div class="cell small-4 medium-3">
+
+          <div class="cell small-12 medium-2">
               {% comment %}
                 {% for service_item in site.data.services %}
                   {% if forloop.first == true %}

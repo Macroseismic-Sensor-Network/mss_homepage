@@ -60,8 +60,13 @@ Das MacroSeismic Sensor Team stimmt seine Aktivitäten eng mit dem [Erdbebendien
 [1]: https://www.zamg.ac.at/cms/de/geophysik
 [2]: https://www.gfz-potsdam.de/en/section/seismic-hazard-and-risk-dynamics/projects/previous-projects/seismic-vulnerability-risk-intensity-scales/ems-98-european-macroseismic-scale-1998/language-versions-of-ems-98/
 
+## Unterstützung für {{ 'now' | date: "%Y" }}
 
-## Unterstützung und Förderung
+Wir freuen uns über die Unterstützung des MSS Projekt für das aktuelle Jahr {{ 'now' | date: "%Y" }} durch die folgenden Organisationen.
+
+{% include current_supporter.html %}
+
+## Vergangene Unterstützung und Förderung
 
 Bundesministerium für Bildung, Wissenschaft und Forschung
 : Sparkling und Citizen Science Projekte „Schools & Quakes“ und „QuakeWatch Austria“.
