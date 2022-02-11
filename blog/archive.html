@@ -11,10 +11,10 @@ permalink: "blog/archive/"
 			{% assign counter = 1 %}
 			{% for post in site.posts limit:1000 %}
                         <dd class="accordion-item {% if counter == 1 %}is-active{% endif %}" data-accordion-item>
-                            <a href="#panel{{ counter }}" class="accordion-title">{% if post.subheadline %}{{ post.subheadline }} › {% endif %}<strong>{{ post.title }}</strong></a>
+                            <a href="#panel{{ counter }}" class="accordion-title">{% if post.subheadline %}{{ post.subheadline | replace: "page", "post" | flatify }} › {% endif %}<strong>{{ post.title | replace: "page", "post" | flatify }}</strong></a>
                             <div id="panel{{ counter }}" class="accordion-content" data-tab-content>
-                                    {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% elsif post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
-                                    <a href="{{ site.url }}{{ post.url }}" title="Read {{ post.title | escape_once }}"><strong>{{ site.data.language[page.lang].read_more }}</strong></a><br><br>
+                                    {% if post.meta_description %}{{ post.meta_description | replace: "page", "post" | flatify | strip_html | escape }}{% elsif post.teaser %}{{ post.teaser | replace: "page", "post" | flatify | strip_html | escape }}{% endif %}
+                                    <a href="{{ site.url }}{{ post.url }}" title="Lesen von {{ post.title | replace: 'page', 'post' | flatify | escape_once }}"><strong>{{ site.data.language[page.lang].read_more }}</strong></a><br><br>
                             </div>
 			</dd>
 			{% assign counter=counter | plus:1 %}

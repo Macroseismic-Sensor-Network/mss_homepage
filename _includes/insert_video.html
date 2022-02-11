@@ -26,7 +26,7 @@
 
   {% if caption or credit %}
   <videocaption>
-    {% if caption %}{{ caption | markdownify | remove: "<p>" | remove: "</p>" }}{% endif %} {%if credit %}<i>{{ credit }}</i>{% endif %}
+    {% if caption %}{{ caption | flatify | markdownify | remove: "<p>" | remove: "</p>" }}{% endif %} {%if credit %}<i>{{ credit }}</i>{% endif %}
   </videocaption>
   {% endif %}
     

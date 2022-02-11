@@ -12,23 +12,23 @@
     <div id="post-{{ post.slug }}" class="cell">
         <div class="grid-x">
             <div class="cell">
-                <h1 class="blog_heading"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
+                <h1 class="blog_heading"><a href="{{ site.url }}{{ post.url }}">{{ post.title | replace: "page", "post" | flatify }}</a></h1>
             </div>
             {% if post.image.header %}
             <div class="cell">
-                <a href="{{ site.url }}{{ post.url }}" title="{{ post.title escape_once }}"><img src="{{ site.image_dir | append: post.image_dir | append: "/" | append: post.image.header | relative_url }}" alt="{{ post.title escape_once }}" width="100%"></a>
+                <a href="{{ site.url }}{{ post.url }}" title="{{ post.title escape_once }}"><img src="{{ site.image_dir | append: post.image_dir | append: "/" | append: post.image.header | relative_url }}" alt="{{ post.title | replace: 'page', 'post' | flatify | escape_once }}" width="100%"></a>
             </div>
             {% endif %}
             <div class="cell">
                 {% if post.subheadline %}
-                <p class="subheadline">{{ post.subheadline }}</p>
+                <p class="subheadline">{{ post.subheadline | replace: "page", "post" | flatify }}</p>
                 {% endif %}
 
                 <p class="content">
                     {% if post.meta_description %}
-                    {{ post.meta_description | strip_html | markdownify }}
+                    {{ post.meta_description | replace: "page", "post" | flatify | strip_html | markdownify }}
                     {% elsif post.teaser %}
-                    {{ post.teaser | strip_html | markdownify }}
+                    {{ post.teaser | replace: "page", "post" | flatify | strip_html | markdownify }}
                     {% endif %}
                 </p>
 

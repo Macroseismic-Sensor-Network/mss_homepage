@@ -1,6 +1,6 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>{% if page.meta_title %}{{ page.meta_title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<title>{% if page.meta_title %}{{ page.meta_title | flatify }}{% elsif page.title %}{{ page.title | flatify }}{% else %}{{ site.title }}{% endif %}</title>
 
 {% if page.meta_description %}<meta name="description" content="{{ page.meta_description | strip_html | escape }}"/>{% elsif page.teaser %}<meta name="description" content="{{ page.teaser | strip_html | escape }}" />{% elsif site.description %}<meta name="description" content="{{ site.description | strip_html | escape }}" />{% endif %}
 {% if page.meta_keywords %}<meta name="keywords" content="{{ page.meta_keywords | strip_html | escape }}"/>{% endif %}
