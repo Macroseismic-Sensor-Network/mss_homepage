@@ -1,7 +1,7 @@
 ---
 title: "Erdbeben Wiener Neustadt 6. Februar 2022"
 subheadline: "Erdbeben mit Intensität II im Raum Wiener Neustadt."
-teaser: "Am 6. Jänner 2022 um 02:25 Ortszeit ereignete sich im Raum Wiener Neustadt ein Erdbeben mit der maximalen Intensität II. Die vom MSS Netzwerk aufgezeichnete maximale Bodengeschwindigkeit betrug 0.299 mm/s."
+teaser: "Am 6. Februar 2022 um 02:25 Ortszeit ereignete sich im Raum Wiener Neustadt ein Erdbeben mit der maximalen Intensität II. Die vom MSS Netzwerk aufgezeichnete maximale Bodengeschwindigkeit betrug 0.299 mm/s."
 
 license: cc-by-sa-4.0
 copyright:
@@ -56,7 +56,7 @@ galleries:
               caption: Die PGV Werte am rechten Rand entsprechen dem Betrag der maximalen PGV.
 ---
 
-Das Erdbeben mit einer maximalen kapp über der **Intensität II (kaum bemerkbar, [EMS-98][sec:ems98])** wurde am 6. Februar 2022 um 02:25:23 Ortszeit vom MSS Netzwerk detektiert. Die vom MSS Netzwerk gemessene maximale Bodengeschwindigkeit (Peak-Ground-Velocity, PGV) dieses Ereignisses betrug 0.299 mm/s und wurde an der Station MAPI in Markt Piesting aufgezeichnet. Die Interpolation der gemessenen PGV Werte ist in [Abbildung {{ page.figures.main_pgvcontour.number }}][fig:main_pgvcontour] dargestellt. Die in dieser Abbildung dargestellten Daten des MSS Netzwerks lassen darauf schließen, dass das Erdbeben kleinräumig im Bereich Wiener Neustadt von einigen Personen schwach wahrgenommen werden konnte.
+Das Erdbeben mit einer maximalen **Intensität II (kaum bemerkbar, [EMS-98][sec:ems98])** wurde am 6. Februar 2022 um 02:25:23 Ortszeit vom MSS Netzwerk detektiert. Die vom MSS Netzwerk gemessene maximale Bodengeschwindigkeit (Peak-Ground-Velocity, PGV) dieses Ereignisses betrug 0.299 mm/s und wurde an der Station MAPI in Markt Piesting aufgezeichnet. Die Interpolation der gemessenen PGV Werte ist in [Abbildung {{ page.figures.main_pgvcontour.number }}][fig:main_pgvcontour] dargestellt. Die in dieser Abbildung dargestellten Daten des MSS Netzwerks lassen darauf schließen, dass das Erdbeben kleinräumig im Bereich Wiener Neustadt von einigen Personen schwach wahrgenommen werden konnte.
 
 Der in [Abbildung {{ page.figures.main_pgvcontour.number }}][fig:main_pgvcontour] dargestellte maximale PGV Wert von 0.261 mm/s entspricht dem Maximum der interpolierten Werte, bei denen die stationsabhängigen Verstärkunsfaktoren berücksichtig sind (siehe Abschitt [Verstärkungsfaktoren und Interpolation][sec:amplification_factors] der Dokumentation). Aus diesem Grund unterscheidet er sich vom oben angegebenen gemessenen Maximum. Die interpolierten PGV Werte stellt eine realistischere großräumige Repräsentation der punktuellen Einzelmessungen der Stationen dar.
 
