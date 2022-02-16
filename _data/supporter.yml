@@ -11,6 +11,7 @@ baumit:
 
 zamg:
     name: Zentralanstalt für Meteorologie und Geodynamik
+    url: https://www.zamg.ac.at
     logo: zamg_logo.jpg
     logo_footer: zamg_logo_footer.jpg
     description: "Im Jahr 2022 konnten wir die Zentralanstalt für Meteorologie und Geodynamik als langfristige Kooperationspartnerin gewinnen. Neben der finanziellen Unterstützung ist vor allem der Austausch von Daten und Wissen ein bereichernder Aspekt."
