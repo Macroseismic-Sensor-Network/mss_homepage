@@ -31,7 +31,7 @@
             {% assign cur_year =  'now' | date: "%Y" | plus: 0 %}
             {% if cur_supporter_data.sponsoring contains cur_year %} 
               <div style="padding-right: 10px; padding-bottom: 10px">      
-                <a href="{{ cur_supporter_data.url }}" target="blank"><img src="{{ site.image_dir | append: 'supporter/' | append: cur_supporter_data.logo | relative_url }}" style="width: 100%; min-width: 70px; max-width: 70px" alt="{{ cur_supporter_data.name }} Logo" title="{{ cur_supporter_data.name }} Logo"/></a>
+                <a href="{{ cur_supporter_data.url }}" target="blank"><img src="{{ site.image_dir | append: 'supporter/' | append: cur_supporter_data.logo_footer | relative_url }}" style="width: 100%; max-height: 85px; max-width: 150px" alt="{{ cur_supporter_data.name }} Logo" title="{{ cur_supporter_data.name }} Logo"/></a>
               </div>
             {% endif %}
             {% endfor %}
