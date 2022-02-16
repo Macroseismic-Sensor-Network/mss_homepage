@@ -2,12 +2,25 @@ baumit:
     name: Baumit GmbH
     url: https://www.baumit.at
     logo: baumit_logo.jpg
+    logo_footer: baumit_logo.jpg
     description: "Die Baumit GmbH fördert das MSS Projekt seit der Installation der ersten Stationen im südlichen Wiener Becken im Jahr 2017. Die Unterstützung erfolgt einerseits finanziell aber auch durch ein großes Engagement bei Kooperationen im wissenschaftlichen und funktionellen Bereich."
     sponsoring:
         - 2020
         - 2021
         - 2022
 
+zamg:
+    name: Zentralanstalt für Meteorologie und Geodynamik
+    logo: zamg_logo.jpg
+    logo_footer: zamg_logo_footer.jpg
+    description: "Im Jahr 2022 konnten wir die Zentralanstalt für Meteorologie und Geodynamik als langfristige Kooperationspartnerin gewinnen. Neben der finanziellen Unterstützung ist vor allem der Austausch von Daten und Wissen ein bereichernder Aspekt."
+    sponsoring:
+        - 2022
+        - 2023
+        - 2024
+        - 2025
+        - 2026
+        
 mertlresearch:
     name: Mertl Research GmbH
     url: https://www.mertl-research.at
