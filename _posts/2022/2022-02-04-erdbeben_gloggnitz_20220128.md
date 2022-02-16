@@ -78,7 +78,7 @@ Das [Video {{ page.videos.main_pgvcontour.number }}][vid:main_pgvcontour] zeigt 
 
 ## Seismogramme
 
-In der [Gallerie {{page.galleries.main_seismogram.number}}][gal:main_seismogram] sind die Seismogramme aller zur zeit des Erdbebens aktiven Stationen des MSS Neztwerks dargestellt. Die Amplituden der Seismogramme sind für jeden Kanal individuell skaliert. Die maximale PGV ist für jeden Kanal angegeben. Die Seismogramme sind nach der aufsteigenden Epizentraldistanz der Stationen sortiert. Als Hypozentrum wurde die Lokalisierung der ZAMG verwendet.
+In der [Gallerie {{page.galleries.main_seismogram.number}}][gal:main_seismogram] sind die Seismogramme aller zur Zeit des Erdbebens aktiven Stationen des MSS Neztwerks dargestellt. Die Amplituden der Seismogramme sind für jeden Kanal individuell skaliert. Die maximale PGV ist für jeden Kanal angegeben. Die Seismogramme sind nach der aufsteigenden Epizentraldistanz der Stationen sortiert. Als Hypozentrum wurde die Lokalisierung der ZAMG verwendet.
 
 {% include insert_gallery.html key="main_seismogram" %}
 
