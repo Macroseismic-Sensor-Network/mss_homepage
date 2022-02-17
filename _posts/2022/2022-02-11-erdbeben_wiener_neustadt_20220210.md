@@ -5,7 +5,7 @@ teaser: "Am {{ page.earthquake.date }} um {{ page.earthquake.time }} Ortszeit er
 
 earthquake:
     region: Wiener Neustadt
-    date: 10. Februar.2022
+    date: 10. Februar 2022
     time: "18:23:01"
     intensity: II
     intensity_def: kaum bemerkbar
