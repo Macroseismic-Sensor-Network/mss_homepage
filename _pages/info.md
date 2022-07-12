@@ -26,7 +26,7 @@ Aktuelle Meldungen und historische Berichte über gefühlte seismische Wellen un
 
 ## Kontakt
 
-Wir Fragen zum Macroseismic Sensor Netzwerk wenden Sie sich unter den folgenden Kontaktmöglichkeiten gerne an uns:
+Für Fragen zum Macroseismic Sensor Netzwerk wenden Sie sich unter den folgenden Kontaktmöglichkeiten gerne an uns:
 
 Stefan Mertl
 : Email: [info@mertl-research.at][8]<br>Mastodon: [@mertlresearch@mastodon.social][9]{:target="blank"}
