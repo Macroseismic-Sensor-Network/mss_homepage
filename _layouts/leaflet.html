@@ -22,6 +22,7 @@ custom_css:
 <head>
     {% include head_common.html %}
     {% include load_custom_css.html %}
+    {% include vue/nrt/vue_css.html %}
 </head>
 <body id="top-of-page" class="{{ layout.format }}">
     <div id="leaflet_container" class="grid-y grid-frame">
@@ -33,6 +34,5 @@ custom_css:
 
     {% include load_custom_js.html %}
     {% include load_custom_js_inc.html %}
-
 </body>
 </html>

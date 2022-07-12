@@ -17,6 +17,11 @@ Karte so schnell wie möglich wieder zu Verfügung zu stellen.</p>
 </div>
 {% endcomment %}
 
+<!-- The javascript scource has to be included after the app content. -->
 {% include vue/nrt/vue_scripts.html %}
+
+{% comment %}
+<!-- The CSS styles are loaded in the header of the leaflet.html template. -->
 {% include vue/nrt/vue_css.html %}
+{% endcomment %}
 
