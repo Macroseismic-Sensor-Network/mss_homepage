@@ -62,7 +62,7 @@ Bei einer Internetanbindung über LAN ist nach dem Anschließen des Netzgerätes
 ### Empfindlichkeit und Frequenzcharakteristik
 Der MacroSeismic Sensor arbeitet mit dem 16 Bit Analog-Digital Wandler (ADC) ADS1114 von Texas Instruments. Dieser ADC hat eine Eingangsspannung (Fullscale Range) von +/- 4.096 V und kann diesen Spannungsbereich auf 2<sup>16</sup> Zahlenwerte, den sogenannten *Counts* aufteilen. Daraus ergibt sich das nominale Bitweight, das angibt, wieviel Volt ein Count entspricht. Für den ADS1114 ergibt sich ein Bitweigth von 125 &mu;V. Weiters verfügt der ADC über einen programmierbaren Vorverstärker, der als Programmable Gain Amplifier (PGA) bezeichnet wird. Für das MSS Netzwerk werden je nach Aufstellungsort die Vorverstärkungsfaktoren (gain) 8 und 16 verwendet.
 
-Als Geofone werden R.T.Clark 4.5 Hz Geofone verwendet. Diese verfügen über eine Sensitivität $$ \mathrm{sensitivity}_{geo} $$ von 28.8 V/m/s.
+Als Geofone werden R.T.Clark 4.5 Hz Geofone verwendet. Diese verfügen über eine Sensitivität $$ \mathrm{sensitivity}_{geo} $$ von 27 V/m/s.
 
 Für die Empfindlichkeit des MacroSeismic-Sensors $$ S_{mss} $$gilt:
 
