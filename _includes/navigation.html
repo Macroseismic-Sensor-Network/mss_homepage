@@ -1,6 +1,6 @@
 <div id="navigation" data-sticky-container>
     <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;" style="width: 100%">
-        <div id="small-top-nav" class="title-bar" data-responsive-toggle="top-nav" data-hide-for="medium">
+        <div id="small-top-nav" class="title-bar show-for-small-only"  data-responsive-toggle="top-nav" data-hide-for="medium">
             <div class="title-bar-left">
                 <div class="title-bar-logo float-left"><a href="{{ site.url | relative_url }}" title="Zur Hauptseite"><img src=" {{site.assets_dir | append: 'img/mss_icon_80x80.png' | relative_url}}" width="40" class="header_logo" alt="MSS Logo" title="{{ site.data.language[page.lang].take_me_back }}"></a></div>
             </div>
@@ -9,8 +9,8 @@
                 <button class="menu-icon" type="button" data-toggle="top-nav"></button>
             </div>
         </div>        
-        <div id="top-nav" class="top-bar">
-            <div class="top-bar-title hide-for-small-only">
+        <div id="top-nav" class="top-bar hide-for-small-only">
+            <div class="top-bar-title">
                 <ul class="menu simple">
                     <li class="top-bar-title-logo">
                         <a href="{{ site.url | relative_url}}" title="Zur Hauptseite">
