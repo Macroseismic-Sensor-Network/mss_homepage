@@ -43,7 +43,8 @@ image_dir: '/images/'
 markdown: kramdown
 permalink: /:categories/:title/
 highlight: rouge
-plugins: [jekyll-paginate, jekyll-scholar]
+plugins: [jekyll-paginate,
+          jekyll-scholar]
 excerpt_separator: "<!--more-->"
 include: ['.htaccess', '_pages', '_projects']
 # Exclude these files from your production _site
