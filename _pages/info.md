@@ -46,9 +46,6 @@ TU Wien, Department für Geodäsie und Geoinformation
 TGM Wien
 : Prof. Mag. Dr. Walter Rafeiner-Magor ([TGM Wien][6]{:target="blank"})
 
-Schüler\*innen des TGM Wien
-: Klaus Ableitinger, Daniel Frank, Stefan Polydor
-
 HTL Wiener Neustadt
 : DI Dr. Karl Filz, Ing. Martin Krieger, DI Gerald Stickler ([HTL Wiener Neustadt][7]{:target="blank"})
 
@@ -59,6 +56,15 @@ Das MacroSeismic Sensor Team stimmt seine Aktivitäten eng mit dem [Erdbebendien
 
 [1]: https://www.zamg.ac.at/cms/de/geophysik
 [2]: https://www.gfz-potsdam.de/en/section/seismic-hazard-and-risk-dynamics/projects/previous-projects/seismic-vulnerability-risk-intensity-scales/ems-98-european-macroseismic-scale-1998/language-versions-of-ems-98/
+
+
+## Kooperationen
+
+Landeswarnzentrale Niederösterreich
+: Die annähernd Echtzeit Informationen des MSS Netzwerks über die Seismizität im südlichen Becken sind im Inforscreen der [Landeswarnzentrale Niederöstereich][lwz-noe]{:target="blank"} integriert.
+
+Zentralanstalt für Meteorologie und Geodynamik
+: Die seismischen Daten der MSS werden in annähernd Echtzeit an die [ZAMG][zamg]{:target="blank"} weitergegeben und sind dort in das seismologische Auswertesystem eingebunden.
 
 ## Unterstützung für {{ 'now' | date: "%Y" }}
 
@@ -92,3 +98,5 @@ Baumit GmbH
 [8]: mailto:info@mertl-research.at
 [9]: https://mastodon.social/@mertlresearch
 [10]: mailto:ewald.brueckl@geo.tuwien.ac.at
+[lwz-noe]: https://www.noe.gv.at/noe/Katastrophenschutz/Landeswarnzentrale.html
+[zamg]: https://www.zamg.ac.at
