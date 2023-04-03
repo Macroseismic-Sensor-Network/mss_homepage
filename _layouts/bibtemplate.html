@@ -18,7 +18,7 @@
 {% endif %}
 
 {% if entry.local_url %}
-<a href="{{ site.url }}/assets/doc/{{ entry.local_url }}">download pdf</a><br>
+<a href="{{ entry.local_url | prepend: '/assets/doc/' | relative_url }}">download pdf</a><br>
 {% endif %}
 
 {% if entry.code %}
