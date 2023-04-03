@@ -1,0 +1,22 @@
+
+
+<dl>
+  {% for cur_supporter in site.data.supporter %}
+    {% assign cur_supporter_key = cur_supporter[0] %}
+    {% assign cur_supporter_data = cur_supporter[1] %}
+    {% assign cur_year =  'now' | date: "%Y" | plus: 0 %}
+    {% assign support_years = '' %}
+    {% for support_year in cur_supporter_data.sponsoring %}
+      {% if support_year < cur_year %}
+        {% if support_years.size > 0 %}
+          {% assign support_years = support_years | append: ', ' %}
+        {% endif %}
+        {% assign support_years = support_years | append: support_year %}
+      {% endif %}
+    {% endfor %}
+    {% if support_years.size > 0 %}
+      <dt>{{ cur_supporter_data.name }}</dt>
+      <dd>Wir danken  <a href="{{ cur_supporter_data.url }}" target="blank">{{ cur_supporter_data.name }}</a> für die Unterstützung {% if support_years.size == 4 %}im Jahr{% else %}in den Jahren{% endif %} {{ support_years }}.</dd>
+    {% endif %}
+  {% endfor %}
+</dl>
