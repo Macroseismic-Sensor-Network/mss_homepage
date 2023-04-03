@@ -8,33 +8,28 @@ baumit:
         - 2020
         - 2021
         - 2022
+        - 2023
 
-zamg:
-    name: Zentralanstalt für Meteorologie und Geodynamik
-    url: https://www.zamg.ac.at
-    logo: zamg_logo.jpg
-    logo_footer: zamg_logo_footer.jpg
-    description: "Im Jahr 2022 konnten wir die Zentralanstalt für Meteorologie und Geodynamik als langfristige Kooperationspartnerin gewinnen. Neben der finanziellen Unterstützung ist vor allem der Austausch von Daten und Wissen ein bereichernder Aspekt."
+geosphere:
+    name: Geosphere Austria
+    url: https://www.geosphere.at
+    logo: geosphere_logo.png
+    logo_footer: geosphere_logo.png
+    description: "Im Jahr 2022 konnten wir die Geosphere Austria (damals ZAMG) als langfristige Kooperationspartnerin gewinnen. Neben der finanziellen Unterstützung ist vor allem der Austausch von Daten und Wissen ein bereichernder Aspekt."
     sponsoring:
         - 2022
         - 2023
         - 2024
         - 2025
         - 2026
-
+        
 stadtgemeinde_hainburg:
     name: Stadtgemeinde Hainburg
     url: https://www.hainburg-donau.gv.at/
     logo: stadtgemeinde_hainburg_wappen.jpg
     logo_footer: stadtgemeinde_hainburg_wappen.jpg
-    description: Im Jahr 2022 konnten wir die Stadtgemeinde Hainburg als Unterstützerin des MSS Netzwerks gewinnen.
+    description: "Seit dem Jahr 2022 zählt die Stadtgemeinde Hainburg a.d. Donau zu den Ünterstützer*innen des MSS Netzwerks."
     sponsoring:
         - 2022
-        
-mertlresearch:
-    name: Mertl Research GmbH
-    url: https://www.mertl-research.at
-    logo:
-    sponsoring:
-        - 2020
-        - 2021
+        - 2023
+
