@@ -9,6 +9,9 @@ image_dir: info
 permalink: "/info/"
 ---
 
+## Ende der aktuellen Datenverarbeitung.
+Im Oktober 2026 wurde die Datenverarbeitung und die Visualisierung der annähernd Echtzeit Daten auf der MSS Homepage eingestellt. Die Archivdaten des MSS Netzwerks von 2018 bis 2026 sind weiterhin auf der Homepage verfügbar. Die Stationen des MSS Netzwerks sind weiterhin in Betrieb und werden vom Erdbebendienst der [Geosphere Austria][geosphere]{:target="blank"} betreut und in deren Datenverarbeitung integriert.
+
 ## Was interessiert uns?
 Fühlbare Erschütterungen oder Schwingungen des Erdbodens oder von Gebäuden beunruhigen oder erschrecken die betroffenen Menschen. Zwei Fragen, die Ursache und die Intensität betreffend, wollen wir rasch und verlässlich beantwortet haben:
 > War das ein Erdbeben, eine Sprengung, eine Erschütterung von einer nahen Baustelle oder der Schwerverkehr?
@@ -25,15 +28,15 @@ Aktuelle Meldungen und historische Berichte über gefühlte seismische Wellen un
 
 
 ## MSS Team
-Das **MacroSeismic-Sensor Team** ist aus einer Zusammenarbeit im Rahmen der Sparkling Science Projekte *Schools & Quakes* und *QuakeWatch Austria* entstanden. Für die aktuelle organisatorische Leitung des gemeinschaftlichen seismischen Netzwerks ist [Dr. Stefan Mertl][8] von der [Mertl Research GmbH][4]{:target="blank"} zuständig. 
+Das **MacroSeismic-Sensor Team** ist aus einer Zusammenarbeit im Rahmen der Sparkling Science Projekte *Schools & Quakes* und *QuakeWatch Austria* entstanden. Für die aktuelle organisatorische Leitung des gemeinschaftlichen seismischen Netzwerks ist <b>Em.Univ.Prof. Dr. Ewald Brückl</b> zuständig. 
 
 Seit Jahresbeginn 2017 waren, beziehungsweise sind folgende Personen an der Weiterentwicklung, Produktion und Verteilung der MacroSeismic Sensoren, der erforderlichen Logistik und der Bedienung des Citizen Science Aspekts (z.B. Homepage) tätig:
 
-Mertl Research GmbH (organisatorische Leitung)
-: Dr. Stefan Mertl ([Mertl Research GmbH][4]{:target="blank"})
+Em.Univ.Prof. DI Dr. Ewald Brückl (Leitung)
+: TU Wien, [Department für Geodäsie und Geoinformation, Forschungsabteilung Geophysik][5]{:target="blank"}
 
-TU Wien, Department für Geodäsie und Geoinformation
-: Em.Univ.Prof. DI Dr. Ewald Brückl ([TU Wien, Department für Geodäsie und Geoinformation, Forschungsabteilung Geophysik][5]{:target="blank"})
+Mertl Research GmbH (technische Unterstützung)
+: Dr. Stefan Mertl ([Mertl Research GmbH][4]{:target="blank"})
 
 TGM Wien
 : Prof. Mag. Dr. Walter Rafeiner-Magor ([TGM Wien][6]{:target="blank"})
@@ -44,15 +47,12 @@ HTL Wiener Neustadt
 Privatpersonen
 : Dr. Johanna Brückl, Ing. Peter Carniel
 
-Das MacroSeismic Sensor Team stimmt seine Aktivitäten eng mit dem [Erdbebendienst der Geosphere Austria][zamg_geophysik]{:target="blank"} ab und wird von diesem auch unterstützt. Die Klassifikation von Erdbebenmeldungen aus der Bevölkerung im Sinne der [EMS-98 (European Macroseismic Scale 1998)][ems-98]{:target="blank"} wird zur Korrelation mit MacroSeismic Sensor Daten ebenfalls vom Erdbebendienst der ZAMG (Mag. Christiane Freudenthaler-Pascher, Mag. Rita Meurers) zur Verfügung gestellt.
+Das MacroSeismic Sensor Team stimmt seine Aktivitäten eng mit dem [Erdbebendienst der Geosphere Austria][geosphere]{:target="blank"} ab und wird von diesem auch unterstützt. Die Klassifikation von Erdbebenmeldungen aus der Bevölkerung im Sinne der [EMS-98 (European Macroseismic Scale 1998)][ems-98]{:target="blank"} wird zur Korrelation mit MacroSeismic Sensor Daten ebenfalls vom Erdbebendienst der ZAMG (Mag. Christiane Freudenthaler-Pascher, Mag. Rita Meurers) zur Verfügung gestellt.
 
 
 ## Kontakt
 
 Für Fragen zum Macroseismic Sensor Netzwerk wenden Sie sich unter den folgenden Kontaktmöglichkeiten gerne an uns:
-
-Stefan Mertl
-: Email: [info@mertl-research.at][8]<br>Mastodon: [@mertlresearch@mastodon.social][9]{:target="blank"}
 
 Ewald Brückl
 : Email: [ewald.brueckl@geo.tuwien.ac.at][10]
