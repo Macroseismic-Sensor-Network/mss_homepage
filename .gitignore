@@ -5,6 +5,7 @@ _site/
 *.swp
 .jekyll-metadata
 images/generative_logo
+vendor/
 sync_site.bash
 Gemfile.lock
 *~
