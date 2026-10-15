@@ -35,8 +35,8 @@ Seit Jahresbeginn 2017 waren, beziehungsweise sind folgende Personen an der Weit
 Em.Univ.Prof. DI Dr. Ewald Brückl (Leitung)
 : TU Wien, [Department für Geodäsie und Geoinformation, Forschungsabteilung Geophysik][5]{:target="blank"}
 
-Mertl Research GmbH (technische Unterstützung)
-: Dr. Stefan Mertl ([Mertl Research GmbH][4]{:target="blank"})
+Mertl Research e.U. (technische Unterstützung)
+: Dr. Stefan Mertl ([Mertl Research e.U.][4]{:target="blank"})
 
 TGM Wien
 : Prof. Mag. Dr. Walter Rafeiner-Magor ([TGM Wien][6]{:target="blank"})
