@@ -1,4 +1,5 @@
 assets/vue/nrt/data/map/
+assets/vue/nrt/data/archive/
 msn_config/
 msn_ergebnisse/
 msn_realtime_data/
